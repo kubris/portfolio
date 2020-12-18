@@ -1,42 +1,42 @@
 @font-face {
   font-family: 'M PLUS 1p';
-  src: local('Mplus 1p Light'), local('Mplus1p-Light'), url('Mplus1plight.woff2') format('woff2'), url('Mplus1plight.woff') format('woff'), url('Mplus1plight.ttf') format('truetype');
+  src: local('Mplus 1p Light'), local('Mplus1p-Light'), url('../fonts/Mplus1plight.woff2') format('woff2'), url('../fonts/Mplus1plight.woff') format('woff'), url('../fonts/Mplus1plight.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: 'M PLUS 1p';
-  src: local('Mplus 1p'), local('Mplus1p-Regular'), url('Mplus1p.woff2') format('woff2'), url('Mplus1p.woff') format('woff'), url('Mplus1p.ttf') format('truetype');
+  src: local('Mplus 1p'), local('Mplus1p-Regular'), url('../fonts/Mplus1p.woff2') format('woff2'), url('../fonts/Mplus1p.woff') format('woff'), url('../fonts/Mplus1p.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'M PLUS 1p';
-  src: local('Mplus 1p Thin'), local('Mplus1p-Thin'), url('Mplus1pthin.woff2') format('woff2'), url('Mplus1pthin.woff') format('woff'), url('Mplus1pthin.ttf') format('truetype');
+  src: local('Mplus 1p Thin'), local('Mplus1p-Thin'), url('../fonts/Mplus1pthin.woff2') format('woff2'), url('../fonts/Mplus1pthin.woff') format('woff'), url('../fonts/Mplus1pthin.ttf') format('truetype');
   font-weight: 100;
   font-style: normal;
 }
 @font-face {
   font-family: 'M PLUS 1p';
-  src: local('Mplus 1p ExtraBold'), local('Mplus1p-ExtraBold'), url('Mplus1pextrabold.woff2') format('woff2'), url('Mplus1pextrabold.woff') format('woff'), url('Mplus1pextrabold.ttf') format('truetype');
+  src: local('Mplus 1p ExtraBold'), local('Mplus1p-ExtraBold'), url('../fonts/Mplus1pextrabold.woff2') format('woff2'), url('../fonts/Mplus1pextrabold.woff') format('woff'), url('../fonts/Mplus1pextrabold.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
   font-family: 'M PLUS 1p';
-  src: local('Mplus 1p Black'), local('Mplus1p-Black'), url('Mplus1pblack.woff2') format('woff2'), url('Mplus1pblack.woff') format('woff'), url('Mplus1pblack.ttf') format('truetype');
+  src: local('Mplus 1p Black'), local('Mplus1p-Black'), url('../fonts/Mplus1pblack.woff2') format('woff2'), url('../fonts/Mplus1pblack.woff') format('woff'), url('../fonts/Mplus1pblack.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
 }
 @font-face {
   font-family: 'M PLUS 1p';
-  src: local('Mplus 1p Medium'), local('Mplus1p-Medium'), url('Mplus1pmedium.woff2') format('woff2'), url('Mplus1pmedium.woff') format('woff'), url('Mplus1pmedium.ttf') format('truetype');
+  src: local('Mplus 1p Medium'), local('Mplus1p-Medium'), url('../fonts/Mplus1pmedium.woff2') format('woff2'), url('../fonts/Mplus1pmedium.woff') format('woff'), url('../fonts/Mplus1pmedium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: 'M PLUS 1p';
-  src: local('Mplus 1p Bold'), local('Mplus1p-Bold'), url('Mplus1pbold.woff2') format('woff2'), url('Mplus1pbold.woff') format('woff'), url('Mplus1pbold.ttf') format('truetype');
+  src: local('Mplus 1p Bold'), local('Mplus1p-Bold'), url('../fonts/Mplus1pbold.woff2') format('woff2'), url('../fonts/Mplus1pbold.woff') format('woff'), url('../fonts/Mplus1pbold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
@@ -74,7 +74,7 @@ body {
   margin: 0;
   padding: 0;
   min-width: 320px;
-  font-family: var(--fontMain), sans-serif;
+  font-family: 'M PLUS 1p', sans-serif;
   font-size: 24px;
   font-weight: 400;
   background-color: var(--white);
@@ -87,6 +87,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: var(--overlayBgColor);
+  backdrop-filter: blur(4px);
   z-index: 5;
 }
 #overlay.active {
@@ -365,6 +366,7 @@ button {
   font-size: 20px;
   font-weight: 700;
   line-height: 1.1;
+  transition: 0.3s;
 }
 .mobile-menu__contacts .contacts-social__container {
   margin-bottom: 27px;
@@ -372,6 +374,7 @@ button {
 .mobile-menu__contacts .link {
   font-size: 18px;
   line-height: 1.22;
+  transition: 0.3s;
 }
 .mobile-menu__contacts .bottom-line::after {
   bottom: 1px;
@@ -381,15 +384,22 @@ button {
 }
 .toggle-menu {
   display: flex;
-  margin-right: 11px;
-  margin-top: -17px;
+  margin-right: 20px;
   width: 40px;
   height: 40px;
   align-items: center;
   z-index: 20;
+  transition: 0.2s;
+}
+.toggle-menu.active {
+  margin-right: 11px;
+  margin-top: -17px;
 }
 @media (min-width: 768px) {
   .toggle-menu {
+    margin-right: 14px;
+  }
+  .toggle-menu.active {
     margin-right: -9px;
     margin-top: -17px;
   }
@@ -485,12 +495,24 @@ button {
   }
 }
 .logo {
-  color: #000000;
+  display: inline-block;
+  color: var(--black);
   font-family: var(--mainFont);
   font-size: 42px;
   line-height: 1;
   font-weight: 900;
-  cursor: pointer;
+  transition: 0.3s;
+}
+.logo span::before {
+  transition: 0.3s;
+}
+.logo:hover {
+  color: var(--red);
+  transform: translateY(-2px);
+}
+.logo:hover span::before {
+  bottom: 3px;
+  background-color: var(--yellow);
 }
 .header-menu {
   display: none;
@@ -524,7 +546,7 @@ button {
   .menu-link::after {
     content: "";
     position: absolute;
-    bottom: 4px;
+    bottom: 2px;
     left: 50%;
     right: 50%;
     z-index: -1;
@@ -756,6 +778,9 @@ button {
   .header-center__content-title .title-1 span:first-child {
     margin-bottom: 10px;
   }
+  .header-center__content-title p > .none {
+    display: none;
+  }
 }
 @media (min-width: 1200px) {
   .header-center__content-title {
@@ -786,7 +811,7 @@ button {
     left: -5px;
   }
   .header-center__content-title p {
-    max-width: 488px;
+    max-width: 508px;
     margin-bottom: 33px;
     font-size: 24px;
     line-height: 1.5;
