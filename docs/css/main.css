@@ -1,43 +1,43 @@
 @font-face {
-  font-family: 'M PLUS 1p';
-  src: local('Mplus 1p Light'), local('Mplus1p-Light'), url('../fonts/Mplus1plight.woff2') format('woff2'), url('../fonts/Mplus1plight.woff') format('woff'), url('../fonts/Mplus1plight.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'M PLUS 1p';
-  src: local('Mplus 1p'), local('Mplus1p-Regular'), url('../fonts/Mplus1p.woff2') format('woff2'), url('../fonts/Mplus1p.woff') format('woff'), url('../fonts/Mplus1p.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'M PLUS 1p';
-  src: local('Mplus 1p Thin'), local('Mplus1p-Thin'), url('../fonts/Mplus1pthin.woff2') format('woff2'), url('../fonts/Mplus1pthin.woff') format('woff'), url('../fonts/Mplus1pthin.ttf') format('truetype');
+  font-family: 'mplus1p';
+  src: url('../fonts/mplus-1p/mplus1pthin-webfont.woff2') format('woff2'), url('../fonts/mplus-1p/mplus1pthin-webfont.woff') format('woff'), url('../fonts/mplus-1p/mplus1pthin.ttf') format('truetype');
   font-weight: 100;
   font-style: normal;
 }
 @font-face {
-  font-family: 'M PLUS 1p';
-  src: local('Mplus 1p ExtraBold'), local('Mplus1p-ExtraBold'), url('../fonts/Mplus1pextrabold.woff2') format('woff2'), url('../fonts/Mplus1pextrabold.woff') format('woff'), url('../fonts/Mplus1pextrabold.ttf') format('truetype');
-  font-weight: 800;
+  font-family: 'mplus1p';
+  src: url('../fonts/mplus-1p/mplus1plight-webfont.woff2') format('woff2'), url('../fonts/mplus-1p/mplus1plight-webfont.woff') format('woff'), url('../fonts/mplus-1p/mplus1plight.ttf') format('truetype');
+  font-weight: 300;
   font-style: normal;
 }
 @font-face {
-  font-family: 'M PLUS 1p';
-  src: local('Mplus 1p Black'), local('Mplus1p-Black'), url('../fonts/Mplus1pblack.woff2') format('woff2'), url('../fonts/Mplus1pblack.woff') format('woff'), url('../fonts/Mplus1pblack.ttf') format('truetype');
-  font-weight: 900;
+  font-family: 'mplus1p';
+  src: url('../fonts/mplus-1p/mplus1p-webfont.woff2') format('woff2'), url('../fonts/mplus-1p/mplus1p-webfont.woff') format('woff'), url('../fonts/mplus-1p/mplus1p.ttf') format('truetype');
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: 'M PLUS 1p';
-  src: local('Mplus 1p Medium'), local('Mplus1p-Medium'), url('../fonts/Mplus1pmedium.woff2') format('woff2'), url('../fonts/Mplus1pmedium.woff') format('woff'), url('../fonts/Mplus1pmedium.ttf') format('truetype');
+  font-family: 'mplus1p';
+  src: url('../fonts/mplus-1p/mplus1pmedium-webfont.woff2') format('woff2'), url('../fonts/mplus-1p/mplus1pmedium-webfont.woff') format('woff'), url('../fonts/mplus-1p/mplus1pmedium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
-  font-family: 'M PLUS 1p';
-  src: local('Mplus 1p Bold'), local('Mplus1p-Bold'), url('../fonts/Mplus1pbold.woff2') format('woff2'), url('../fonts/Mplus1pbold.woff') format('woff'), url('../fonts/Mplus1pbold.ttf') format('truetype');
+  font-family: 'mplus1p';
+  src: url('../fonts/mplus-1p/mplus1pbold-webfont.woff2') format('woff2'), url('../fonts/mplus-1p/mplus1pbold-webfont.woff') format('woff'), url('../fonts/mplus-1p/mplus1pbold.ttf') format('truetype');
   font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'mplus1p';
+  src: url('../fonts/mplus-1p/mplus1pextrabold-webfont.woff2') format('woff2'), url('../fonts/mplus-1p/mplus1pextrabold-webfont.woff') format('woff'), url('../fonts/mplus-1p/mplus1pextrabold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'mplus1p';
+  src: url('../fonts/mplus-1p/mplus1pblack-webfont.woff2') format('woff2'), url('../fonts/mplus-1p/mplus1pblack-webfont.woff') format('woff'), url('../fonts/mplus-1p/mplus1pblack.ttf') format('truetype');
+  font-weight: 900;
   font-style: normal;
 }
 :root {
@@ -55,7 +55,7 @@
   --btnHoverLight: #797979;
   --btnActiveLight: #181818;
   --btnBgLight: transparent;
-  --fontMain: 'M PLUS 1p';
+  --fontMain: 'mplus1p';
   --bgLine: #fbdc4d;
   --menuColor: #000000;
   --linkColorActive: #ea655f;
@@ -74,7 +74,7 @@ body {
   margin: 0;
   padding: 0;
   min-width: 320px;
-  font-family: 'M PLUS 1p', sans-serif;
+  font-family: 'mplus1p', sans-serif;
   font-size: 24px;
   font-weight: 400;
   background-color: var(--white);
@@ -683,10 +683,16 @@ button {
     flex-direction: row-reverse;
   }
 }
+@media (min-width: 992px) {
+  .header-center__content {
+    justify-content: space-around;
+  }
+}
 @media (min-width: 1200px) {
   .header-center__content {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
     align-items: flex-end;
   }
 }
@@ -884,14 +890,19 @@ button {
 }
 @media (min-width: 768px) {
   .header-info__wrapper {
-    justify-content: space-between;
     flex-direction: row;
-    align-items: flex-start;
   }
 }
-.skills > a.link,
-.header-info__contacts > a.link {
-  transition: 0.3s;
+@media (min-width: 992px) {
+  .header-info__wrapper {
+    justify-content: space-around;
+  }
+}
+@media (min-width: 1200px) {
+  .header-info__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 .skills .title-3,
 .header-info__contacts .title-3 {
@@ -919,9 +930,15 @@ button {
   margin-bottom: 40px;
   max-width: 85%;
 }
+@media (min-width: 768px) {
+  .skills {
+    margin-bottom: 40px;
+    margin-right: 48px;
+    max-width: 321px;
+  }
+}
 @media (min-width: 1200px) {
   .skills {
-    width: 100%;
     max-width: 605px;
   }
   .skills .title-3 {
@@ -972,7 +989,10 @@ button {
 }
 @media (min-width: 768px) {
   .header-info__contacts {
-    width: 100%;
+    max-width: 290px;
+  }
+  .header-info__contacts > a.link {
+    transition: 0.3s;
   }
   .header-info__contacts .contacts-title {
     margin-bottom: 25px;
@@ -981,32 +1001,27 @@ button {
 @media (min-width: 1200px) {
   .header-info__contacts {
     max-width: 360px;
-    width: 100%;
+    padding-right: 70px;
   }
   .header-info__contacts .contacts-title {
     margin-bottom: 40px;
   }
 }
-.contacts-social__container {
-  margin-bottom: 8px;
-}
-@media (min-width: 768px) {
-  .contacts-social__container {
-    margin-bottom: 19px;
-  }
-}
-@media (min-width: 1200px) {
-  .contacts-social__container {
-    margin-bottom: 26px;
-  }
-}
 .contacts-social__list {
+  margin-bottom: 14px;
   display: flex;
   justify-content: space-between;
+  max-width: 290px;
 }
 @media (min-width: 768px) {
   .contacts-social__list {
+    margin-bottom: 22px;
     justify-content: flex-start;
+  }
+}
+@media (min-width: 1200px) {
+  .contacts-social__list {
+    margin-bottom: 26px;
   }
 }
 .contacts-social__link {

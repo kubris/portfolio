@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'mplus1p';
+    src: url('mplus1pthin-webfont.woff2') format('woff2'),
+         url('mplus1pthin-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'mplus1p';
+    src: url('mplus1plight-webfont.woff2') format('woff2'),
+         url('mplus1plight-webfont.woff') format('woff'), 
+		url('mplus1plight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'mplus1p';
+    src: url('mplus1p-webfont.woff2') format('woff2'),
+         url('mplus1p-webfont.woff') format('woff'),
+		 url('mplus1p.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'mplus1p';
+    src: url('mplus1pmedium-webfont.woff2') format('woff2'),
+         url('mplus1pmedium-webfont.woff') format('woff'),
+		 url('mplus1pmedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'mplus1p';
+    src: url('mplus1pbold-webfont.woff2') format('woff2'),
+         url('mplus1pbold-webfont.woff') format('woff'),
+		 url('mplus1pbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'mplus1p';
+    src: url('mplus1pextrabold-webfont.woff2') format('woff2'),
+         url('mplus1pextrabold-webfont.woff') format('woff'),
+		 url('mplus1pextrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'mplus1p';
+    src: url('mplus1pblack-webfont.woff2') format('woff2'),
+         url('mplus1pblack-webfont.woff') format('woff'),
+		 url('mplus1pblack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
