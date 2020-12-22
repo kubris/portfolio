@@ -17,7 +17,7 @@ const tagBody = document.body;  // tag body
 
 // ==== gamburger click ====
 toggleMenu.addEventListener('click', function() {
-	this.classList.toggle('active');
+	this.classList.toggle('toggle-menu--active');
 	mobileMenu.classList.toggle('active');
 	overlay.classList.toggle('active');
 	tagBody.classList.toggle('noscroll');
@@ -26,7 +26,7 @@ toggleMenu.addEventListener('click', function() {
 // ==== mobile menu click ====
 mobileMenu.addEventListener('click', function() {
 	this.classList.remove('active');
-	toggleMenu.classList.remove('active');
+	toggleMenu.classList.remove('toggle-menu--active');
 	overlay.classList.remove('active');
 	tagBody.classList.remove('noscroll');
 });
@@ -34,7 +34,7 @@ mobileMenu.addEventListener('click', function() {
 // ==== overlay click  ====
 overlay.addEventListener('click', function() {
 	this.classList.remove('active');
-	toggleMenu.classList.remove('active');
+	toggleMenu.classList.remove('toggle-menu--active');
 	mobileMenu.classList.remove('active');
 	tagBody.classList.remove('noscroll');
 });
