@@ -56,12 +56,20 @@
 		</div>
 
 		<!-- page dots -->
-		<div class="dots-list">
-			<a href="#header" class="dots-link active"></a>
-			<a href="#portfolio" class="dots-link"></a>
-			<a href="#" class="dots-link"></a>
-			<a href="#" class="dots-link"></a>
-		</div>
+		<ul id="page-nav">
+			<li class="active">
+				<a href="#header"></a>
+			</li>
+			<li>
+				<a href="#portfolio"></a>
+			</li>
+			<li>
+				<a href="#timeline"></a>
+			</li>
+			<li>
+				<a href="#contacts"></a>
+			</li>
+		</ul>
 
 		<!-- header -->
 		<header id="header" class="header">
@@ -206,9 +214,7 @@
 		<section class="portfolio" id="portfolio">
 			<div class="container">
 				
-				<div class="portfolio-title">
-					<h2 class="title-2 underline">Портфолио</h2>
-				</div>
+				<h2 class="portfolio-title title-2 underline">Портфолио</h2>
 
 				<div class="portfolio-works">
 					<div class="works-buttons__block">
@@ -287,9 +293,115 @@
 		</section>
 		<!-- // portfolio -->
 
+		<!-- timeline -->
+		<section id="timeline" class="timeline">
+			<div class="container">
+
+				<h2 class="timeline-title title-2 underline">Как я работаю</h2>
+
+				<div class="timeline-block">
+					
+					<!-- timeline-block__item -->
+					<div class="timeline-block__item">
+						<div class="timeline-item__icon">
+							<svg width="40" height="40" id="tl-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path class="TL-icon" fill="#ffcf8f" d="M16.34,27.89a.83.83,0,0,1-.68,0L3.15,22.28,1.52,23a.91.91,0,0,0,0,1.65L15.66,31a.83.83,0,0,0,.68,0l14.14-6.35a.91.91,0,0,0,0-1.65l-1.62-.73Zm0-7.94a.83.83,0,0,1-.68,0L3.31,14.41l-1.79.8a.91.91,0,0,0,0,1.65l14.14,6.35a.83.83,0,0,0,.68,0l14.14-6.35a.91.91,0,0,0,0-1.65l-1.79-.8ZM30.48,9.07a.91.91,0,0,0,0-1.65L16.34,1.07a.83.83,0,0,0-.68,0L1.52,7.42a.91.91,0,0,0,0,1.65l14.14,6.35a.83.83,0,0,0,.68,0Z"/></svg>
+						</div>
+
+						<div class="timeline-item__text">
+							<h5 class="title-5 underline">Оцениваю макет</h5>
+							<p>
+								Оцениваю объем работы, сложность, нюансы. Задаю вопросы.
+							</p>
+							<span>Время: 2 - 4 часа</span>
+						</div>
+					</div>
+					<!-- // timeline-block__item -->
+
+					<!-- timeline-block__item -->
+					<div class="timeline-block__item">
+						<div class="timeline-item__icon">
+							<svg width="40" height="40" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path class="TL-icon" fill="#ff5b5b" d="M21.47,28.32l-4-2.21s0-.07,0-.11V25h-3v1s0,.07,0,.11l-4,2.21A1.5,1.5,0,0,0,12,30.94l4-2.23,4,2.23a1.5,1.5,0,0,0,1.46-2.62ZM3,21a2,2,0,0,0,2,2H27a2,2,0,0,0,2-2V7H3Zm4.94-6.06,3-3a1.5,1.5,0,0,1,2.12,0L17,15.88l4.94-4.94a1.5,1.5,0,0,1,2.12,2.12l-6,6a1.5,1.5,0,0,1-2.12,0L12,15.12l-1.94,1.94a1.5,1.5,0,1,1-2.12-2.12ZM30.72,1.74A1.36,1.36,0,0,0,29.51,1h-27a1.36,1.36,0,0,0-1.21.74,3,3,0,0,0,0,2.52A1.36,1.36,0,0,0,2.49,5h27a1.36,1.36,0,0,0,1.21-.74A3,3,0,0,0,30.72,1.74Z"></path></svg>
+						</div>
+
+						<div class="timeline-item__text">
+							<h5 class="title-5 underline">ТЗ, смета и график 
+								работ</h5>
+							<p>
+								Согласовываем техническое задание и график работ по&nbsp;проекту. Осмечиваю стоимость по&nbsp;этапам работы.
+							</p>
+							<span>Время: 2 - 4 часа</span>
+						</div>
+					</div>
+					<!-- // timeline-block__item -->
+
+					<!-- timeline-block__item -->
+					<div class="timeline-block__item">
+						<div class="timeline-item__icon">
+							<svg width="40" height="40" xmlns="http://www.w3.org/2000/svg"><g><rect fill="rgba(0,0,0,0)" id="canvas_background" height="42" width="42" y="-1" x="-1"/><g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid"><rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/></g></g><g><path stroke="null" class="TL-icon" fill="#ac74ee" d="m34.518018,11.384234l-4.457153,3.172728a12.718873,12.211021 0 1 1 -9.927943,-4.679112l0,0l0,2.746142c0,0.733202 0.513748,0.999818 1.152475,0.599889l8.858771,-5.665596a0.860889,0.826515 0 0 0 0,-1.479717l-8.914316,-5.67893c-0.638717,-0.413253 -1.152475,-0.133303 -1.152475,0.599889l0,3.546l0,0a18.356279,17.623335 0 1 0 14.440641,6.838708zm-19.939189,11.331183c-0.805344,0.693202 -1.666233,1.333081 -2.499344,1.986293c-2.027243,1.61303 -1.513495,3.119414 0.652606,3.212727l5.47078,0c1.999475,-0.093313 1.971708,-2.479535 -0.097192,-2.479535l-2.999213,0c0.374899,-0.27994 0.777576,-0.559889 1.152475,-0.853172c1.707879,-1.333081 3.221375,-2.839455 3.221375,-4.785758a3.88786,3.732627 0 0 0 -4.235001,-3.66597c-4.304416,0 -5.429123,4.892404 -2.888122,4.892404c1.930041,0 0.958081,-2.319556 2.777041,-2.319556a1.180243,1.133121 0 0 1 1.221899,1.199768a4.165567,3.999243 0 0 1 -1.777304,2.812798zm10.483347,4.945738a1.471839,1.413071 0 0 0 2.235526,-0.186636a1.888395,1.81299 0 0 0 0.291586,-1.106455l0,-0.733192a2.457688,2.359556 0 0 0 1.055283,-0.133313a1.083051,1.039798 0 0 0 0.666485,-0.986475a1.124707,1.079798 0 0 0 -0.708142,-1.026475a2.679849,2.572849 0 0 0 -0.999738,-0.11998l0,-5.43897a1.652344,1.586364 0 0 0 -1.763425,-1.73301a1.721768,1.65302 0 0 0 -1.541263,0.799849l-3.929517,5.212354c-0.999738,1.333081 -1.041394,3.439344 0.833111,3.439344l3.429648,0l0,0.679879a1.694001,1.626364 0 0 0 0.430445,1.333081zm-2.652082,-4.279192l2.485465,-3.719293c0,0.599879 -0.083313,1.186435 -0.12497,1.786323s0,1.253101 -0.069424,1.89298l-2.291071,0.03999z" id="svg_4"/><g id="svg_6"/></g></svg>
+						</div>
+
+						<div class="timeline-item__text">
+							<h5 class="title-5 underline">Вы держите руку 
+								на пульсе</h5>
+							<p>
+								Выдаю клиенту доступ к&nbsp;GitHub репозиторию и&nbsp;доске Trello. Вы&nbsp;в&nbsp;любое время можете видеть актуальное состояние проекта и&nbsp;задач.
+							</p>
+							<span>Время: 2 часа</span>
+						</div>
+					</div>
+					<!-- // timeline-block__item -->
+
+					<!-- timeline-block__item -->
+					<div class="timeline-block__item">
+						<div class="timeline-item__icon">
+							<svg width="40" height="40" xmlns="http://www.w3.org/2000/svg"><g><rect fill="rgba(0,0,0,0)" id="canvas_background" height="42" width="42" y="-1" x="-1"/><g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid"><rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/></g></g><g><path stroke="null" id="svg_5" d="m11.575484,16.882638a3.170563,3.310935 0 1 0 -3.249827,-5.683771a24.09628,25.163103 0 0 0 -7.424402,7.753105a3.170563,3.310935 0 0 0 0,3.407504a24.09628,25.163103 0 0 0 7.424402,7.753105a3.170563,3.310935 0 1 0 3.263038,-5.683771a18.65348,19.479332 0 0 1 -4.068889,-3.766188a16.381243,17.106496 0 0 1 4.055679,-3.779984zm27.504635,2.08313a24.09628,25.163103 0 0 0 -7.424402,-7.753105a3.170563,3.310935 0 1 0 -3.263038,5.683771a18.65348,19.479332 0 0 1 4.068889,3.766188a16.381243,17.106496 0 0 1 -4.068889,3.807575a3.170563,3.310935 0 1 0 3.263038,5.683771a24.09628,25.163103 0 0 0 7.424402,-7.753105a3.170563,3.310935 0 0 0 0.013211,-3.44889l-0.013211,0.013796zm-18.376056,-14.154246l-6.60534,28.970678a2.642136,2.759112 0 0 0 5.138954,1.282987l6.60534,-28.970678a2.642136,2.759112 0 0 0 -5.125744,-1.296783l-0.013211,0.013796z" fill="#51e5cb" class="TL-icon"/> <g id="svg_6"/></g></svg>
+						</div>
+
+						<div class="timeline-item__text">
+							<h5 class="title-5 underline">Выполняю каждый 
+								этап</h5>
+							<p>
+								Поочередно выполняю каждый этап работы. Передаю результаты. Заказчик производит поэтапную оплату.
+							</p>
+							<span>Время: 2 - 4 часа</span>
+						</div>
+					</div>
+					<!-- // timeline-block__item -->
+
+					<!-- timeline-block__item -->
+					<div class="timeline-block__item">
+						<div class="timeline-item__icon">
+							<svg width="40" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path class="TL-icon" fill="#7cc0ff" d="M30.84,10.75l-6.11-7A2.52,2.52,0,0,0,23.07,3h-14a2.55,2.55,0,0,0-1.67.75l-6.24,7a1.22,1.22,0,0,0,0,1.52L15.37,29.73a.78.78,0,0,0,1.26,0L30.87,12.27A1.23,1.23,0,0,0,30.84,10.75ZM10.31,13l1.89,8.09L5.59,13Zm6.63-7,1.43,4H13.63l1.43-4Zm1.67,7L16,24.18,13.39,13Zm3.08,0H26.4l-6.6,8.09Zm4.51-3H21.56L20.13,6h2.58ZM9.41,6h2.46l-1.43,4H5.85Z"/></svg>
+						</div>
+
+						<div class="timeline-item__text">
+							<h5 class="title-5 underline">Финальное ревью 
+								проекта</h5>
+							<p>
+								Проект готов. Финальное ревью и&nbsp;полировка до&nbsp;идеального состояния. Передаю файлы проекта, заливаю сайт на&nbsp;хостинг заказчика.
+							</p>
+							<span>Время: 2 - 4 часа</span>
+						</div>
+					</div>
+					<!-- // timeline-block__item -->
+
+				</div>
+				<!-- // timeline-block -->
+			</div>
+			<!-- // container -->
+		</section>
+		<!-- // timeline -->
+
+		<!-- contacts -->
+		<section id="contacts" class="contacts">
+
+		</section>
+		<!-- // contacts -->
+
 		<!-- Vendor's script  -->
 		<script src="./libs/jquery/jquery-3.0.0.min.js"></script> 
 		<script src="./libs/mixitup3/mixitup.min.js"></script> 
+		<script src="./libs/nav-btn/nav.min.js"></script> 
 
 		<!-- User's script -->
 		<script src="./js/main.js"></script> 
