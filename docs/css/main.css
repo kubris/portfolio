@@ -1420,6 +1420,7 @@ button {
 }
 .timeline-block__item .underline::before {
   display: none;
+  transition: 0.3s;
 }
 .timeline-block__item:first-child {
   padding-top: 4px;
@@ -1521,6 +1522,9 @@ button {
 .timeline-item__text .title-5 {
   margin-bottom: 7px;
   line-height: normal;
+}
+.timeline-item__text .title-5:hover::before {
+  background-color: var(--red);
 }
 .timeline-item__text p {
   font-size: 14px;
@@ -1857,11 +1861,18 @@ textarea {
   padding-left: 4px;
   margin: auto;
   border: none;
-  border-bottom: 1px solid var(--placeholderColor);
+  border-bottom: 2px solid var(--placeholderColor);
   color: var(--black);
   font-family: var(--fontMain);
   font-size: 20px;
   font-weight: 700;
+  transition: 0.3s;
+}
+input:active,
+textarea:active,
+input:focus,
+textarea:focus {
+  border-color: var(--red);
 }
 @media (min-width: 1200px) {
   input,
