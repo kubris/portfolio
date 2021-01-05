@@ -57,7 +57,8 @@
   --btnBgLight: transparent;
   --fontMain: 'mplus1p';
   --bgLine: #fbdc4d;
-  --menuColor: #000000;
+  --menuColor: #ffffff;
+  --menuColorDesktop: #000000;
   --linkColorActive: #ea655f;
   --overlayBgColor: rgba(88, 151, 155, 0.75);
   --worksBtnColor: #8fa5ae;
@@ -66,6 +67,7 @@
   --timelineTextColor: #000000;
   --timelineVertical: #e1eef4;
   --placeholderColor: #bcbcbc;
+  --placeholderLine: #eaeaea;
   --linkColorBlue: #039be5;
   --linkColorGray: #96969d;
   --linkColorRed: #ed574f;
@@ -135,6 +137,7 @@ svg {
   max-width: 100%;
 }
 button,
+textarea,
 input {
   outline: none;
 }
@@ -143,6 +146,11 @@ button {
   border: 0;
   cursor: pointer;
   background-color: transparent;
+}
+input[type="radio"],
+input[type="checkbox"],
+input[type="submit"] {
+  appearance: none;
 }
 .container {
   width: 100%;
@@ -554,7 +562,7 @@ button {
     margin-right: 72px;
     position: relative;
     z-index: 1;
-    color: var(--menuColor);
+    color: var(--menuColorDesktop);
     font-size: 20px;
     font-weight: 700;
   }
@@ -1023,7 +1031,7 @@ button {
   .header-info__contacts > a.link {
     transition: 0.3s;
   }
-  .header-info__contacts .contacts-title {
+  .header-info__contacts > .contacts-title {
     display: block;
     margin-bottom: 25px;
     left: 44%;
@@ -1040,19 +1048,21 @@ button {
   }
 }
 .contacts-social__list {
-  margin-bottom: 14px;
   display: flex;
   justify-content: space-between;
+}
+.header-info__contacts > .contacts-social__list {
+  margin-bottom: 14px;
   max-width: 290px;
 }
 @media (min-width: 768px) {
-  .contacts-social__list {
+  .header-info__contacts > .contacts-social__list {
     margin-bottom: 22px;
     justify-content: flex-start;
   }
 }
 @media (min-width: 1200px) {
-  .contacts-social__list {
+  .header-info__contacts > .contacts-social__list {
     margin-bottom: 26px;
   }
 }
@@ -1522,6 +1532,7 @@ button {
 .timeline-item__text .title-5 {
   margin-bottom: 7px;
   line-height: normal;
+  cursor: pointer;
 }
 .timeline-item__text .title-5:hover::before {
   background-color: var(--red);
@@ -1579,7 +1590,7 @@ button {
 }
 @media (min-width: 768px) {
   .contacts {
-    padding: 81px 0 66px;
+    padding: 81px 0 88px;
   }
 }
 @media (min-width: 1200px) {
@@ -1589,24 +1600,12 @@ button {
     background-repeat: repeat-y;
     background-position: center top;
   }
-  .contacts:before {
-    content: '';
-    position: absolute;
-    left: -120px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 448px;
-    height: 280px;
-    background-image: url(../img/contacts/sixtysix.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
 }
 .contacts-title {
   margin-bottom: 27px;
   position: relative;
-  left: 50%;
   font-size: 42px;
+  left: 50%;
   transform: translateX(-50%);
 }
 .contacts-title::before {
@@ -1660,16 +1659,16 @@ button {
   }
 }
 .contacts-content {
-  margin-bottom: 36px;
+  margin-bottom: 51px;
   padding-top: 22px;
 }
 .contacts-content p {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   color: var(--black);
   font-family: var(--fontMain);
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.65;
 }
 @media (min-width: 768px) {
   .contacts-content {
@@ -1685,10 +1684,25 @@ button {
     font-size: 18px;
     line-height: 1.56;
   }
+  .contacts-content > .contacts-social__list {
+    justify-content: flex-start;
+  }
 }
 @media (min-width: 1200px) {
   .contacts-content {
     padding-top: 22px;
+    position: relative;
+  }
+  .contacts-content:before {
+    content: '';
+    position: absolute;
+    left: -63%;
+    top: 0;
+    width: 448px;
+    height: 280px;
+    background-image: url(../img/contacts/sixtysix.png);
+    background-repeat: no-repeat;
+    background-size: contain;
   }
   .contacts-content p {
     max-width: 505px;
@@ -1786,7 +1800,7 @@ button {
 }
 .contacts-form {
   margin: auto;
-  padding: 40px 15px;
+  padding: 52px 15px 41px;
   width: 100%;
   box-shadow: 0 28px 100px #c2dbeb;
   background-color: #ffffff;
@@ -1794,13 +1808,14 @@ button {
 .contacts-form > button {
   display: block;
   width: 100%;
-  margin-top: 17px;
+  margin-top: 20px;
   height: 54px;
   line-height: 46px;
 }
 @media (min-width: 768px) {
   .contacts-form {
-    padding: 40px 25px;
+    padding-left: 25px;
+    padding-right: 25px;
     margin: 0;
     margin-left: auto;
     max-width: 339px;
@@ -1809,59 +1824,51 @@ button {
 @media (min-width: 1200px) {
   .contacts-form {
     margin: auto;
-    padding: 41px 60px 40px;
+    padding: 75px 60px 40px;
     max-width: 510px;
   }
   .contacts-form > button {
     display: inline-block;
     width: auto;
     height: 64px;
-    margin-top: 17px;
+    margin-top: 40px;
     padding: 0 37px;
     line-height: 56px;
   }
 }
-.contacts-form__item {
+.contacts-form__cell {
   position: relative;
-  padding-top: 19px;
-  margin-bottom: 21px;
+}
+.contacts-form__cell + .contacts-form__cell {
+  margin-top: 33px;
+}
+@media (min-width: 1200px) {
+  .contacts-form__cell + .contacts-form__cell {
+    margin-top: 55px;
+  }
 }
 label {
   position: absolute;
-  top: 22px;
+  top: 12px;
   transition: top 0.5s;
   color: var(--placeholderColor);
   font-family: var(--fontMain);
   font-size: 20px;
   font-weight: 700;
 }
-@media (min-width: 768px) {
-  label {
-    top: 23px;
-    font-size: 20px;
-  }
-}
 @media (min-width: 1200px) {
   label {
-    top: 46px;
+    top: 10px;
     left: 0;
-    font-size: 20px;
-  }
-}
-@media (min-width: 1200px) {
-  textarea + label {
-    top: 34px;
   }
 }
 input,
 textarea {
   display: block;
   width: 100%;
-  padding-bottom: 15px;
-  padding-left: 4px;
-  margin: auto;
+  height: 50px;
   border: none;
-  border-bottom: 2px solid var(--placeholderColor);
+  border-bottom: 2px solid var(--placeholderLine);
   color: var(--black);
   font-family: var(--fontMain);
   font-size: 20px;
@@ -1874,24 +1881,16 @@ input:focus,
 textarea:focus {
   border-color: var(--red);
 }
-@media (min-width: 1200px) {
-  input,
-  textarea {
-    padding-bottom: 37px;
-  }
-}
 textarea {
   resize: none;
-  min-height: 121px;
+  height: 128px;
 }
-@media (min-height: 768px) {
+@media (min-width: 1200px) {
   textarea {
-    min-height: 121px;
+    height: 118px;
   }
-}
-@media (min-height: 768px) {
-  textarea {
-    min-height: 136px;
+  textarea + label {
+    top: 0;
   }
 }
 input:focus,
@@ -1900,30 +1899,37 @@ textarea:focus {
   transition-duration: 0.3s;
 }
 input:focus ~ label,
-input:not(:placeholder-shown) ~ label,
 textarea:focus ~ label,
-textarea:not(:placeholder-shown) ~ label {
-  top: 17px;
+.label-active {
+  top: -17px;
   color: #ed9626;
   font-family: var(--fontMain);
   font-size: 16px;
   font-weight: 700;
 }
-@media (min-width: 768px) {
-  input:focus ~ label,
-  input:not(:placeholder-shown) ~ label,
-  textarea:focus ~ label,
-  textarea:not(:placeholder-shown) ~ label {
-    top: -3px;
-    left: 3px;
+@media (min-width: 1200px) {
+  .label-active,
+  textarea:focus ~ label {
+    top: -27px;
   }
 }
-::-webkit-input-placeholder {
-  opacity: 0;
+.contacts-form__cell > label.error {
+  position: absolute;
+  color: var(--red);
+  font-family: var(--fontMain);
+  font-size: 12px;
+  font-weight: 700;
 }
-input:focus::-webkit-input-placeholder,
-textarea:focus::-webkit-input-placeholder {
-  opacity: 0;
+.contacts-form__cell > input + label.error {
+  top: 32px;
+}
+.contacts-form__cell > textarea + label.error {
+  top: 110px;
+}
+@media (min-width: 1200px) {
+  .contacts-form__cell > textarea + label.error {
+    top: 100px;
+  }
 }
 .footer {
   padding: 24px 0 45px;
