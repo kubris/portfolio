@@ -48,6 +48,25 @@ $(document).ready(function () {
 			tagBody.classList.remove("noscroll");
 			});
 	};
+
+	// FORM - placeholder
+	const formItems = document.querySelectorAll('.contacts-form__item')
+	for(let item of formItems) {
+		const thisParent = item.closest('.contacts-form__cell');
+		const thisPlaceholder = thisParent.querySelector('.contacts-form__label');
+
+		item.addEventListener('focus', function() {
+			thisPlaceholder.classList.add('label-active');
+		});
+
+		item.addEventListener('blur', function() {
+			if (item.value.length > 0) {
+				thisPlaceholder.classList.add('label-active');
+			} else {
+				thisPlaceholder.classList.remove('label-active');
+			}
+		});
+	}
 	// ==== end of a mobile-menu ====================
 
 	// ==== mixitup3 ====
@@ -97,26 +116,24 @@ $(document).ready(function () {
 			},
 			message: {
 				required: "Введите текст сообщения",
-			},
+			}
 		},
+		submitHandler: function(from) {
+			ajaxFormSubmit();
+		}
 	});
 
-	// FORM - placeholder
-	const formItems = document.querySelectorAll('.contacts-form__item')
-	for(let item of formItems) {
-		const thisParent = item.closest('.contacts-form__cell');
-		const thisPlaceholder = thisParent.querySelector('.contacts-form__label');
-
-		item.addEventListener('focus', function() {
-			thisPlaceholder.classList.add('label-active');
-		});
-
-		item.addEventListener('blur', function() {
-			if (item.value.length > 0) {
-				thisPlaceholder.classList.add('label-active');
-			} else {
-				thisPlaceholder.classList.remove('label-active');
+	function ajaxFormSubmit() {
+		let string = $(".contacts-form").serialize();
+		$.ajax({
+			type: "POST",
+			url: "php/mail.php",
+			data: string,
+			success: function(html) {
+				$(".contacts-form").slideUp(800);
+				$("#answer").html(html);
 			}
 		});
+		return false;
 	}
 });

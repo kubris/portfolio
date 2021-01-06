@@ -456,7 +456,8 @@ input[type="submit"] {
     position: fixed;
     display: flex;
     flex-direction: column;
-    top: 50vh;
+    top: 50%;
+    transform: translateY(-50%);
     right: 80px;
     z-index: 100;
   }
@@ -1908,7 +1909,7 @@ textarea:focus ~ label,
   font-weight: 700;
 }
 @media (min-width: 1200px) {
-  .label-active,
+  textarea + .label-active,
   textarea:focus ~ label {
     top: -27px;
   }
@@ -1921,15 +1922,20 @@ textarea:focus ~ label,
   font-weight: 700;
 }
 .contacts-form__cell > input + label.error {
-  top: 32px;
+  top: 50px;
 }
 .contacts-form__cell > textarea + label.error {
   top: 110px;
 }
 @media (min-width: 1200px) {
   .contacts-form__cell > textarea + label.error {
-    top: 100px;
+    top: 118px;
   }
+}
+.contact-form__success {
+  padding: 20px;
+  text-align: center;
+  background-color: #ffffff;
 }
 .footer {
   padding: 24px 0 45px;
