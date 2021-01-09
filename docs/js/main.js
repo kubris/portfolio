@@ -95,7 +95,7 @@ $(document).ready(function () {
 	}
 
 	// show/hide work-cards when the page is loading
-	if ($(window).width() < 1200) {
+	if ($(window).width() < 1200 && $(window).width() > 767) {
 		$('.works-card.hide-card').hide();
 		$('.works-card__btn').on('click', function() {
 			$('.works-card.hide-card').fadeIn();
