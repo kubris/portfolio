@@ -91,6 +91,7 @@ body {
   font-size: 24px;
   font-weight: 400;
   background-color: var(--white);
+  overflow-x: hidden;
 }
 #overlay {
   display: none;
@@ -389,8 +390,16 @@ input[type="submit"] {
   bottom: 1px;
   background-color: var(--menuColor);
 }
+.mobile-menu__contacts .contacts-social__list {
+  width: 90%;
+}
+@media (min-width: 768px) {
+  .mobile-menu__contacts .contacts-social__list {
+    width: 80%;
+  }
+}
 .mobile-menu__contacts .contacts-social__link {
-  margin-right: 20px;
+  margin-right: 0;
   border-radius: 50%;
   transition: 0.3s;
 }
@@ -1024,6 +1033,8 @@ input[type="submit"] {
 }
 .header-info__contacts .contacts-title {
   margin-bottom: 25px;
+  left: auto;
+  transform: unset;
 }
 @media (min-width: 768px) {
   .header-info__contacts {
@@ -1035,7 +1046,6 @@ input[type="submit"] {
   .header-info__contacts > .contacts-title {
     display: block;
     margin-bottom: 25px;
-    left: 44%;
   }
 }
 @media (min-width: 1200px) {
@@ -1045,7 +1055,6 @@ input[type="submit"] {
   }
   .header-info__contacts .contacts-title {
     margin-bottom: 40px;
-    left: 50%;
   }
 }
 .contacts-social__list {
@@ -1205,7 +1214,8 @@ input[type="submit"] {
   padding-bottom: 20px;
   margin-bottom: 27px;
   max-width: 290px;
-  transition: 0.2s;
+  transition: 0.3s;
+  overflow: hidden;
 }
 .works-card:hover {
   box-shadow: 0px 20px 15px -9px rgba(34, 60, 80, 0.2), 0px -20px 15px -9px rgba(34, 60, 80, 0.2);
@@ -1219,10 +1229,11 @@ input[type="submit"] {
 .works-card:hover .title-3::after {
   height: 2px;
 }
+.works-card.none {
+  display: none;
+}
 .works-card:last-child {
   margin-bottom: 0;
-}
-.works-card.none {
   display: block;
 }
 @media (min-width: 768px) {
@@ -1242,10 +1253,7 @@ input[type="submit"] {
     margin-bottom: 45px;
     max-width: 360px;
   }
-  .works-card .none {
-    display: block;
-  }
-  .works-card:last-child {
+  .works-card.none {
     display: block;
   }
   .works-card:nth-last-child(-n + 3) {
@@ -1258,6 +1266,7 @@ input[type="submit"] {
   transition: 0.3s;
   overflow: hidden;
 }
+.works-card__img-wrapper input,
 .works-card__img-wrapper button {
   padding: 0 30px;
   height: 52px;
@@ -1271,9 +1280,10 @@ input[type="submit"] {
   font-size: 22px;
   font-weight: 800;
   line-height: 48px;
-  transition: 0.3s;
+  transition: 0.5s;
   transform: translate(400px, -50%);
 }
+.works-card__img-wrapper input:hover,
 .works-card__img-wrapper button:hover {
   border-color: var(--red);
   background-color: var(--red);
@@ -1289,7 +1299,7 @@ input[type="submit"] {
   height: 100%;
   background-color: rgba(255, 255, 0, 0.5);
   transform: translateX(-100%);
-  transition: 0.3s;
+  transition: 0.5s;
 }
 @media (min-width: 768px) {
   .works-card__img-wrapper {
@@ -1663,6 +1673,9 @@ input[type="submit"] {
   margin-bottom: 51px;
   padding-top: 22px;
 }
+.contacts-content img {
+  display: none;
+}
 .contacts-content p {
   margin-bottom: 20px;
   color: var(--black);
@@ -1694,16 +1707,13 @@ input[type="submit"] {
     padding-top: 22px;
     position: relative;
   }
-  .contacts-content:before {
-    content: '';
+  .contacts-content img.move-quote {
+    display: block;
     position: absolute;
     left: -63%;
     top: 0;
     width: 448px;
     height: 280px;
-    background-image: url(../img/contacts/sixtysix.png);
-    background-repeat: no-repeat;
-    background-size: contain;
   }
   .contacts-content p {
     max-width: 505px;
@@ -1732,6 +1742,9 @@ input[type="submit"] {
 }
 .contacts-item:nth-last-child(-n + 2) .contacts-item__data {
   color: var(--linkColorGray);
+}
+.contacts-item:nth-last-child(-n + 2) .contacts-item__data:hover {
+  color: var(--red);
 }
 .contacts-item + .contacts-item {
   margin-top: 15px;
@@ -1777,6 +1790,10 @@ input[type="submit"] {
   display: block;
   font-weight: 500;
   color: var(--linkColorBlue);
+  transition: 0.3s;
+}
+.contacts-item__data:hover {
+  color: var(--red);
 }
 @media (min-width: 768px) {
   .contacts-item__data {
@@ -1879,7 +1896,9 @@ textarea {
 input:active,
 textarea:active,
 input:focus,
-textarea:focus {
+textarea:focus,
+input:hover,
+textarea:hover {
   border-color: var(--red);
 }
 textarea {
@@ -1969,5 +1988,12 @@ textarea:focus ~ label,
 }
 .footer-text {
   font-size: 16px;
+}
+.footer-text__link {
+  transition: 0.3s;
+}
+.footer-text__link:active,
+.footer-text__link:hover {
+  color: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */

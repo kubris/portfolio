@@ -67,18 +67,62 @@ $(document).ready(function () {
 			}
 		});
 	}
-	// ==== end of a mobile-menu ====================
+	// ==== end of a mobile-menu =====
 
 	// ==== mixitup3 ====
-	let containerEl = document.querySelector("#works-block");
-
+	let containerEl = document.querySelector('#works-block');
 	let mixer = mixitup(containerEl, {
 		classNames: {
-			block: "",
-		},
+			block: ""
+		}
 	});
 
-	// Подключение точек пагинации page-nav
+	// add/remove two big cards in portfolio
+	const filterToggles = document.querySelectorAll('.works-buttons__block button');
+	const portfolioBigCards = document.querySelectorAll('.works-card');
+	for (let i = 0; i < filterToggles.length; i++) {
+		filterToggles[i].addEventListener('click', function () {
+			if (i == 0) {
+				for (let j = 0; j < 2; j++) {
+					portfolioBigCards[j].classList.add('works-card--big');
+				}
+			} else {
+				for (let j = 0; j < 2; j++) {
+					portfolioBigCards[j].classList.remove('works-card--big');
+				}
+			}
+		});
+	}
+
+	// show/hide work-cards when the page is loading
+	if ($(window).width() < 1200) {
+		$('.works-card.hide-card').hide();
+		$('.works-card__btn').on('click', function() {
+			$('.works-card.hide-card').fadeIn();
+			$(this).hide();
+		});
+	} else {
+		$('.works-card.hide-card').fadeIn();
+		$(this).hide();
+	}
+
+	// show/hide work-cards when the page is resizing
+	$(window).on('resize',function() {
+		if($(window).width() < 1200) {
+			$('.works-card.hide-card').hide();
+			$('.works-card__btn').fadeIn();
+
+			$('.works-card__btn').on('click', function() {
+				$('.works-card.hide-card').fadeIn();
+				$(this).css('display', 'none');
+			});
+		} else {
+			$('.works-card.hide-card').fadeIn();
+			$('.works-card__btn').hide();
+		}
+	});
+
+	// Create page-nav dots
 	$("#page-nav").onePageNav({
 		currentClass: "active",
 		changeHash: false,
@@ -92,8 +136,7 @@ $(document).ready(function () {
 	});
 
 	// FORM VALIDATE
-
-	$("#contacts-form").validate({
+	$('#contacts-form').validate({
 		rules: {
 			email: {
 				required: true,
@@ -123,6 +166,7 @@ $(document).ready(function () {
 		}
 	});
 
+	// Send message by contacts-form
 	function ajaxFormSubmit() {
 		let string = $(".contacts-form").serialize();
 		$.ajax({
@@ -136,4 +180,15 @@ $(document).ready(function () {
 		});
 		return false;
 	}
-});
+
+	// Paralax-effect on contacts-form
+	let prxScene = document.querySelector('.contacts');
+	let prxItems = document.querySelectorAll('.move-quote');
+	prxScene.addEventListener('mousemove', function (e) {
+		let x = e.clientX / window.innerWidth;
+		let y = e.clientY / window.innerHeight;
+		for (let item of prxItems) {
+			item.style.transform = 'translate(-' + x * 35 + 'px, -' + y * 35 + 'px)';
+		}
+	});
+})
