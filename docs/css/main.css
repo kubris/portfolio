@@ -495,7 +495,7 @@ input[type="submit"] {
 }
 @media (min-width: 768px) {
   .header {
-    padding-bottom: 43px;
+    padding-bottom: 44px;
   }
 }
 @media (min-width: 1200px) {
@@ -909,8 +909,7 @@ input[type="submit"] {
 }
 @media (min-width: 768px) {
   .header-image {
-    top: -45px;
-    margin-bottom: -32px;
+    margin-top: -47px;
   }
   .header-image img {
     transform: unset;
@@ -918,16 +917,23 @@ input[type="submit"] {
 }
 @media (min-width: 1200px) {
   .header-image {
-    top: -130px;
-    margin-bottom: -137px;
+    margin-top: -127px;
   }
 }
 .header-info {
-  margin-top: -12px;
+  margin-top: -112px;
+  padding-top: 100px;
+}
+@media (min-width: 768px) {
+  .header-info {
+    margin-top: -86px;
+    padding-top: 100px;
+  }
 }
 @media (min-width: 1200px) {
   .header-info {
-    margin-top: 0;
+    margin-top: -112px;
+    padding-top: 100px;
   }
 }
 .header-info__wrapper {
@@ -1141,13 +1147,8 @@ input[type="submit"] {
     position: relative;
     display: flex;
     flex-direction: row;
-    margin-bottom: 49px;
-    left: -4px;
-  }
-}
-@media (min-width: 1200px) {
-  .works-buttons__block {
     margin-bottom: 50px;
+    left: -4px;
   }
 }
 .works-button {
@@ -1182,6 +1183,7 @@ input[type="submit"] {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 17px;
+  transition: 0s;
 }
 @media (min-width: 768px) {
   .works-cards__block {
@@ -1214,7 +1216,6 @@ input[type="submit"] {
   padding-bottom: 20px;
   margin-bottom: 27px;
   max-width: 290px;
-  transition: 0.3s;
   overflow: hidden;
 }
 .works-card:hover {
@@ -1320,6 +1321,8 @@ input[type="submit"] {
 }
 .works-card h4 {
   margin-bottom: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
   color: var(--worksCardColor);
   font-size: 22px;
   line-height: 1.25;
@@ -1342,6 +1345,8 @@ input[type="submit"] {
   }
 }
 .works-card__text {
+  padding-left: 10px;
+  padding-right: 10px;
   color: var(--worksCardColor);
   font-size: 16px;
   font-family: var(--fontMain);
@@ -1539,14 +1544,14 @@ input[type="submit"] {
   line-height: 1;
   color: var(--timelineTextColor);
   font-family: var(--fontMain);
+  cursor: pointer;
+}
+.timeline-item__text:hover .title-5:before {
+  background-color: var(--red);
 }
 .timeline-item__text .title-5 {
   margin-bottom: 7px;
   line-height: normal;
-  cursor: pointer;
-}
-.timeline-item__text .title-5:hover::before {
-  background-color: var(--red);
 }
 .timeline-item__text p {
   font-size: 14px;
@@ -1601,7 +1606,7 @@ input[type="submit"] {
 }
 @media (min-width: 768px) {
   .contacts {
-    padding: 81px 0 88px;
+    padding: 81px 0 90px;
   }
 }
 @media (min-width: 1200px) {
@@ -1755,6 +1760,9 @@ input[type="submit"] {
 @media (min-width: 768px) {
   .contacts-item {
     font-size: 20px;
+  }
+  .contacts-item + .contacts-item {
+    margin-top: 14px;
   }
 }
 @media (min-width: 1200px) {
