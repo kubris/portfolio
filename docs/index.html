@@ -219,6 +219,7 @@
 			</div>
 			<!-- // header-nav__row -->
 
+			<!-- header-center -->
 			<div class="header-center">
 				<div class="container">
 					<div class="header-center__content">
@@ -259,14 +260,15 @@
 
 							<div class="content-title__btn-container">
 								<a href="#header-info" class="btn">Познакомиться</a>
-								<a href="#" class="btn btn--light">Контакты</a>
+								<a href="#contacts" class="btn btn--light">Контакты</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- // header-title -->
+			<!-- // header-center -->
 
+			<!-- header-image -->
 			<div
 				class="header-image"
 				data-aos="fade-up"
@@ -277,6 +279,7 @@
 			</div>
 			<!-- // header-image -->
 
+			<!-- header-info -->
 			<div id="header-info" class="header-info">
 				<div class="container">
 					<div class="header-info__wrapper">
@@ -299,7 +302,7 @@
 								<li class="skills-item">С Bootstrap и без него.</li>
 							</ul>
 
-							<a href="#" class="btn skills-btn">Смотреть работы</a>
+							<a href="#portfolio" class="btn skills-btn">Смотреть работы</a>
 						</div>
 						<!-- // skills -->
 
@@ -429,55 +432,65 @@
 					</div>
 					<!-- // works-buttons -->
 					<!-- works-block -->
-					<div
-						id="works-block"
-						class="works-cards__block"
-					>
-						<a href="./img/portfolio/work-1f.jpg" class="works-card works-card--big mix frontend" data-fancybox="gallery">
-							<div class="works-card__img-wrapper">
-								<button class="btn" onclick="javascript:window.location='https://kubris.github.io/portfolio/'">Смотреть проект</button>
-								<img src="./img/portfolio/work-1.jpg" alt="“Форест тревел”" />
-							</div>
-							<h4 class="title-4">Личный сайт-портфолио</h4>
-							<p class="works-card__text">Верстка личного сайта-портфолио.</p>
-						</a> <!-- works-card--big -->
-						<a href="./img/portfolio/work-2f.jpg" class="works-card works-card--big mix boots" data-fancybox="gallery">
-							<div class="works-card__img-wrapper">
-								<button class="btn" onclick="javascript:window.location='http://s91806xs.beget.tech/projects/6w30l/index.html'">
-									Смотреть проект
-								</button>
-								<img src="./img/portfolio/work-2.jpg" alt="“Форест тревел”" />
-							</div>
-							<h4 class="title-4">Учебный макет UNIT</h4>
-							<p class="works-card__text">Верстка лендинга с мобильной адаптацией.</p>
-						</a> <!-- works-card--big -->
-						<a href="./img/portfolio/work-3f.jpg" class="works-card mix wp" data-fancybox="gallery">
-							<div class="works-card__img-wrapper">
-								<button class="btn" onclick="javascript:window.location='http://s91806xs.beget.tech/projects/3w14l/index.html'">Смотреть проект</button>
-								<img src="./img/portfolio/work-3.jpg" alt="“Форест тревел”" />
-							</div>
-							<h4 class="title-4">Макет “Форест Тревел”</h4>
-							<p class="works-card__text">Верстка многостраничного сайта.</p>
-						</a>
-						<a href="./img/portfolio/work-4f.jpg" class="works-card mix boots wp" data-fancybox="gallery">
-							<div class="works-card__img-wrapper">
-								<button class="btn" onclick="javascript:window.location='http://s91806xs.beget.tech/projects/2w7l/index.html'">Смотреть проект</button>
-								<img src="./img/portfolio/work-4.jpg" alt="“Форест тревел”" />
-							</div>
-							<h4 class="title-4">Верстка карточки товара</h4>
-							<p class="works-card__text">Верстка под Pixel Perfect с адаптируемым изображением.</p>
-						</a>
-						<a href="./img/portfolio/work-5f.jpg" class="works-card hide-card mix boots frontend" data-fancybox="gallery">
-							<div class="works-card__img-wrapper">
-								<button class="btn" onclick="javascript:window.location=('http://s91806xs.beget.tech/projects/2w8l/index.html', '_blank')">Смотреть проект</button>
-								<img src="./img/portfolio/work-5.jpg" alt="“Форест тревел”" />
-							</div>
-							<h4 class="title-4">Верстка карточки товара</h4>
-							<p class="works-card__text">Верстка под Pixel Perfect с адаптируемым изображением.</p>
-						</a>
+					<div id="works-block" class="works-cards__block">
+
+						<div class="works-card works-card--big mix frontend">
+							<a href="https://kubris.github.io/portfolio/" class="works-card__img-wrapper" target="_blank">
+								<span class="btn">Смотреть проект</span>
+								<img src="./img/portfolio/work-1.jpg" alt="“Форест тревел”"/>
+							</a>
+							<a class="works-card__text-wrapper" href="./img/portfolio/work-1f.jpg" data-fancybox="gallery">
+								<h4 class="title-4">Личный сайт-портфолио</h4>
+								<p class="works-card__text">Верстка личного сайта-портфолио.</p>
+							</a>
+						</div>
+
+						<div class="works-card works-card--big mix frontend" >
+							<a href="http://s91806xs.beget.tech/projects/6w30l/index.html" class="works-card__img-wrapper" target="_blank">
+								<span class="btn">Смотреть проект</span>
+								<img src="./img/portfolio/work-2.jpg" alt="“Форест тревел”"/>
+							</a>
+							<a class="works-card__text-wrapper" href="./img/portfolio/work-2f.jpg" data-fancybox="gallery">
+								<h4 class="title-4">Учебный макет UNIT</h4>
+								<p class="works-card__text">Верстка лендинга с мобильной адаптацией.</p>
+							</a>
+						</div> 
+
+						<div class="works-card mix frontend" >
+							<a href="http://s91806xs.beget.tech/projects/3w14l/index.html" class="works-card__img-wrapper" target="_blank">
+								<span class="btn">Смотреть проект</span>
+								<img src="./img/portfolio/work-3.jpg" alt="“Форест тревел”"/>
+							</a>
+							<a class="works-card__text-wrapper" href="./img/portfolio/work-3f.jpg" data-fancybox="gallery">
+								<h4 class="title-4">Учебный макет UNIT</h4>
+								<p class="works-card__text">Верстка лендинга с мобильной адаптацией.</p>
+							</a>
+						</div> 
+
+						<div class="works-card mix frontend" >
+							<a href="http://s91806xs.beget.tech/projects/2w7l/index.html" class="works-card__img-wrapper" target="_blank">
+								<span class="btn">Смотреть проект</span>
+								<img src="./img/portfolio/work-4.jpg" alt="“Форест тревел”"/>
+							</a>
+							<a class="works-card__text-wrapper" href="./img/portfolio/work-4f.jpg" data-fancybox="gallery">
+								<h4 class="title-4">Учебный макет UNIT</h4>
+								<p class="works-card__text">Верстка лендинга с мобильной адаптацией.</p>
+							</a>
+						</div> 
+
+						<div class="works-card mix frontend hide-card" >
+							<a href="http://s91806xs.beget.tech/projects/2w8l/index.html" class="works-card__img-wrapper" target="_blank">
+								<span class="btn">Смотреть проект</span>
+								<img src="./img/portfolio/work-5.jpg" alt="“Форест тревел”"/>
+							</a>
+							<a class="works-card__text-wrapper" href="./img/portfolio/work-5f.jpg" data-fancybox="gallery">
+								<h4 class="title-4">Учебный макет UNIT</h4>
+								<p class="works-card__text">Верстка лендинга с мобильной адаптацией.</p>
+							</a>
+						</div> 
+
 					</div>
 					<!-- // works-block -->
-
 					<button
 						class="works-card__btn link bottom-line"
 						id="show-all-works"

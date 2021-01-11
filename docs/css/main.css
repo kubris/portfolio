@@ -1224,14 +1224,12 @@ input[type="submit"] {
 .works-card:hover .works-card__img-wrapper::after {
   transform: translateX(0);
 }
-.works-card:hover .works-card__img-wrapper button {
+.works-card:hover .works-card__img-wrapper span {
   transform: translate(-50%, -50%);
+  white-space: nowrap;
 }
 .works-card:hover .title-3::after {
   height: 2px;
-}
-.works-card.none {
-  display: none;
 }
 .works-card:last-child {
   margin-bottom: 0;
@@ -1242,9 +1240,6 @@ input[type="submit"] {
     margin-bottom: 25px;
     max-width: 338px;
   }
-  .works-card.none {
-    display: none;
-  }
   .works-card:nth-last-child(-n + 3) {
     margin-bottom: 0;
   }
@@ -1254,20 +1249,22 @@ input[type="submit"] {
     margin-bottom: 45px;
     max-width: 360px;
   }
-  .works-card.none {
-    display: block;
-  }
   .works-card:nth-last-child(-n + 3) {
     margin-bottom: 0;
   }
 }
 .works-card__img-wrapper {
   position: relative;
+  display: block;
   margin-bottom: 18px;
   transition: 0.3s;
   overflow: hidden;
 }
+.works-card__img-wrapper span {
+  display: inline-block;
+}
 .works-card__img-wrapper input,
+.works-card__img-wrapper span,
 .works-card__img-wrapper button {
   padding: 0 30px;
   height: 52px;
@@ -1285,6 +1282,7 @@ input[type="submit"] {
   transform: translate(400px, -50%);
 }
 .works-card__img-wrapper input:hover,
+.works-card__img-wrapper span:hover,
 .works-card__img-wrapper button:hover {
   border-color: var(--red);
   background-color: var(--red);
@@ -1319,16 +1317,26 @@ input[type="submit"] {
     width: 100%;
   }
 }
-.works-card h4 {
+.works-card__text-wrapper {
+  display: block;
+}
+.works-card__text-wrapper:hover > .title-4 {
+  border-color: var(--red);
+  color: var(--red);
+}
+.works-card .title-4 {
+  display: inline;
   margin-bottom: 8px;
   padding-left: 10px;
   padding-right: 10px;
   color: var(--worksCardColor);
   font-size: 22px;
   line-height: 1.25;
+  border-bottom: 3px solid transparent;
+  transition: 0.4s;
 }
 @media (min-width: 768px) {
-  .works-card h4 {
+  .works-card .title-4 {
     margin-bottom: 5px;
     font-size: 24px;
     max-width: 312px;
@@ -1338,7 +1346,7 @@ input[type="submit"] {
   }
 }
 @media (min-width: 1200px) {
-  .works-card h4 {
+  .works-card .title-4 {
     margin-bottom: 0;
     max-width: 550px;
     font-size: 26px;
