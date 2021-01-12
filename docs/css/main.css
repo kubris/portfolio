@@ -1264,8 +1264,7 @@ input[type="submit"] {
   display: inline-block;
 }
 .works-card__img-wrapper input,
-.works-card__img-wrapper span,
-.works-card__img-wrapper button {
+.works-card__img-wrapper span {
   padding: 0 30px;
   height: 52px;
   position: absolute;
@@ -1282,8 +1281,7 @@ input[type="submit"] {
   transform: translate(400px, -50%);
 }
 .works-card__img-wrapper input:hover,
-.works-card__img-wrapper span:hover,
-.works-card__img-wrapper button:hover {
+.works-card__img-wrapper span:hover {
   border-color: var(--red);
   background-color: var(--red);
   color: #ffffff;
@@ -1305,7 +1303,7 @@ input[type="submit"] {
     margin-bottom: 18px;
   }
   .works-card__img-wrapper img {
-    height: 240px;
+    height: auto;
   }
 }
 @media (min-width: 1200px) {
