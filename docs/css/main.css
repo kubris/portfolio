@@ -450,12 +450,12 @@ input[type="submit"] {
 .toggle-menu--active span::before {
   top: 0;
   transform: rotate(45deg);
-  background-color: var(--menuColor);
+  background-color: #ffffff;
 }
 .toggle-menu--active span::after {
   bottom: 0;
   transform: rotate(-45deg);
-  background-color: var(--menuColor);
+  background-color: #ffffff;
 }
 #page-nav {
   display: none;
