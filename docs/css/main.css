@@ -591,7 +591,7 @@ input[type="submit"] {
   .menu-link::after {
     content: "";
     position: absolute;
-    bottom: 2px;
+    bottom: 0;
     left: 50%;
     right: 50%;
     z-index: -1;
@@ -877,7 +877,7 @@ input[type="submit"] {
   }
   .content-title__btn-container .btn {
     padding: 0 37px;
-    line-height: 52px;
+    line-height: 56px;
   }
   .content-title__btn-container .btn:first-of-type {
     margin-right: 12px;
@@ -1031,7 +1031,7 @@ input[type="submit"] {
   .skills-btn {
     display: inline-block;
     padding: 0 35px;
-    line-height: 52px;
+    line-height: 56px;
   }
 }
 .header-info__contacts a::after {
@@ -1262,9 +1262,6 @@ input[type="submit"] {
 }
 .works-card__img-wrapper span {
   display: inline-block;
-}
-.works-card__img-wrapper input,
-.works-card__img-wrapper span {
   padding: 0 30px;
   height: 52px;
   position: absolute;
@@ -1280,7 +1277,6 @@ input[type="submit"] {
   transition: 0.5s;
   transform: translate(400px, -50%);
 }
-.works-card__img-wrapper input:hover,
 .works-card__img-wrapper span:hover {
   border-color: var(--red);
   background-color: var(--red);
@@ -1303,7 +1299,8 @@ input[type="submit"] {
     margin-bottom: 18px;
   }
   .works-card__img-wrapper img {
-    height: auto;
+    height: 234px;
+    object-fit: cover;
   }
 }
 @media (min-width: 1200px) {
@@ -1317,19 +1314,32 @@ input[type="submit"] {
 }
 .works-card__text-wrapper {
   display: block;
+  padding: 0 10px;
 }
 .works-card__text-wrapper:hover > .title-4 {
   color: var(--red);
 }
+@media (min-width: 768px) {
+  .works-card__text-wrapper:hover > .title-4.underline::before {
+    left: 0;
+    width: 100%;
+  }
+}
 .works-card .title-4 {
   display: inline-block;
   margin-bottom: 8px;
-  padding-left: 10px;
-  padding-right: 10px;
   color: var(--worksCardColor);
   font-size: 22px;
   line-height: 1.25;
   transition: 0.4s;
+}
+.works-card .title-4.underline::before {
+  bottom: 0;
+  height: 2px;
+  left: 50%;
+  width: 0;
+  background-color: var(--red);
+  transition: 0.2s;
 }
 @media (min-width: 768px) {
   .works-card .title-4 {
@@ -1349,8 +1359,6 @@ input[type="submit"] {
   }
 }
 .works-card__text {
-  padding-left: 10px;
-  padding-right: 10px;
   color: var(--worksCardColor);
   font-size: 16px;
   font-family: var(--fontMain);
