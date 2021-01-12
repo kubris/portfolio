@@ -1322,7 +1322,7 @@ input[type="submit"] {
   color: var(--red);
 }
 .works-card .title-4 {
-  display: inline;
+  display: inline-block;
   margin-bottom: 8px;
   padding-left: 10px;
   padding-right: 10px;
