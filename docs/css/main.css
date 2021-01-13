@@ -97,7 +97,6 @@ html,
 body {
   margin: 0;
   padding: 0;
-  margin: 0 auto;
   min-width: 320px;
   font-family: 'mplus1p', sans-serif;
   font-size: 24px;
@@ -328,6 +327,21 @@ input[type="submit"] {
 }
 .none {
   display: none;
+}
+#scrollUp {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 50;
+  height: 40px;
+  width: 40px;
+}
+#scrollUp svg path {
+  transition: 0.6s;
+}
+#scrollUp:hover svg path {
+  fill: #008b74;
 }
 .mobile-menu {
   padding: 0 30px;

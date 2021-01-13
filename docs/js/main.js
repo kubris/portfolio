@@ -198,4 +198,29 @@ $(document).ready(function () {
 			item.style.transform = "translate(-" + x * 35 + "px, -" + y * 35 + "px)";
 		}
 	});
+
+	// Scroll Up button
+	$('#scrollUp').hide();
+	var winWidth = $(window).width();
+	if (winWidth < 1366) {
+		if (winWidth > 880) {
+			$(window).scroll(function() {
+				if( $(this).scrollTop() > 800) {
+					$('#scrollUp').fadeIn();
+				} else {
+					$('#scrollUp').fadeOut();
+				}
+			});
+		} else {
+			$(window).on('wheel', function(event) {
+				if(event.originalEvent.deltaY < 0) { 	// roll up
+					if($(window).scrollTop() > 800) {
+						$('#scrollUp').fadeIn();
+					}
+				} else { 								// roll down
+					$('#scrollUp').fadeOut();
+				}
+			});
+		}
+	}
 });
