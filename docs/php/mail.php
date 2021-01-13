@@ -13,7 +13,7 @@ $c = true;
 
 $project_name = "Портфолио";
 $admin_email  = "kubris.pro@gmail.com";
-$email_from  = "info@s91806xs.beget.tech";
+$email_from  = "info@kubris.site";
 
 // Serialize form fields - that filled-in by User
 foreach ( $_POST as $key => $value ) {
@@ -62,8 +62,7 @@ send_user_data_in_txt_file ($message);
 // header('location: ../thankyou.php');
 
 echo "<div class='contact-form__success'>
-		<h2>Заявка принята!<br>
-		Мы свяжемся с&nbsp;Вами в&nbsp;ближайшее время!
-		</h2>
+		<h4>Заявка принята!</h4>
+		<p>Я свяжусь с&nbsp;Вами<br>в&nbsp;ближайшее время!</p>
 	  </div> ";
 ?>

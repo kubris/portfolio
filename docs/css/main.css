@@ -377,7 +377,7 @@ input[type="submit"] {
 .mobile-menu .logo .underline::before {
   bottom: 5px;
   height: 10px;
-  background-color: #e2bc10;
+  background-color: var(--yellow);
 }
 .mobile-menu .logo:hover {
   color: var(--red);
@@ -2001,9 +2001,22 @@ textarea:focus ~ label,
   }
 }
 .contact-form__success {
+  margin: 0 auto;
   padding: 20px;
+  max-width: 400px;
   text-align: center;
   background-color: #ffffff;
+  border: 5px double #008b74;
+  color: #008b74;
+}
+.contact-form__success > h4 {
+  margin-bottom: 10px;
+}
+.contact-form__success > p {
+  font-family: var(--fontMain);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
 }
 .footer {
   padding: 24px 0 45px;
