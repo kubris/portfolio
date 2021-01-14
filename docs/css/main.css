@@ -67,7 +67,7 @@
   --worksCardColor: #000000;
   --timelineTextColor: #000000;
   --timelineVertical: #e1eef4;
-  --placeholderColor: #bcbcbc;
+  --placeholderColor: #9DD5CC;
   --placeholderLine: #eaeaea;
   --linkColorBlue: #039be5;
   --linkColorGray: #96969d;
@@ -829,6 +829,9 @@ input[type="submit"] {
 .header-center__content-title .title-1 {
   margin-bottom: 21px;
 }
+.header-center__content-title .title-1:hover span::before {
+  bottom: -10px;
+}
 .header-center__content-title .title-1 span {
   display: inline-block;
   margin-bottom: 7px;
@@ -836,6 +839,7 @@ input[type="submit"] {
 .header-center__content-title .title-1 span::before {
   height: 12px;
   bottom: 0;
+  transition: 0.8s;
 }
 .header-center__content-title p {
   color: #393f47;
@@ -1180,7 +1184,7 @@ input[type="submit"] {
   }
 }
 .works-button {
-  color: var(--worksBtnColor);
+  color: var(--placeholderColor);
   font-family: var(--fontMain);
   font-weight: 800;
   transition: 0.3s;
@@ -1193,7 +1197,7 @@ input[type="submit"] {
   margin-right: 0;
 }
 .works-button.control-active {
-  color: var(--worksBtnColorActive);
+  color: var(--btnHover);
 }
 @media (min-width: 768px) {
   .works-button {
@@ -1950,6 +1954,10 @@ input:hover,
 textarea:hover {
   border-color: var(--btnActive);
 }
+input:hover + label,
+textarea:hover + label {
+  color: var(--btnHover);
+}
 textarea {
   resize: none;
   height: 128px;
@@ -1971,7 +1979,7 @@ input:focus ~ label,
 textarea:focus ~ label,
 .label-active {
   top: -17px;
-  color: #ed9626;
+  color: var(--green);
   font-family: var(--fontMain);
   font-size: 16px;
   font-weight: 700;
