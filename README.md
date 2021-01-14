@@ -14,8 +14,10 @@
 
 Если вы ищите специалиста по вёрстке сайтов, front-end разработчика в команду или для работы над проектом — напишите мне.
 
+- url: https://kubris.site/
+
 - email: kubris.pro@gmail.com
 
-- https://kubris.site/
-
 - skype: kubris.pro
+
+![Портфолио](https://raw.githubusercontent.com/kubris/portfolio/main/docs/img/header/header-bg.png)
