@@ -532,6 +532,9 @@ input[type="submit"] {
 .language-block .language-item {
   color: #999;
 }
+.language-block .language-item:hover {
+  color: #008b74;
+}
 .language-block .language-item.active {
   background-color: #008b74;
   color: #ffffff;
