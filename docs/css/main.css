@@ -520,7 +520,7 @@ input[type="submit"] {
   justify-content: space-around;
   align-items: center;
   position: absolute;
-  top: 0;
+  bottom: -22px;
   right: calc(50% - 30px);
   width: 60px;
   font-size: 0;
@@ -598,6 +598,9 @@ input[type="submit"] {
     padding: 0;
   }
 }
+.logo-block {
+  position: relative;
+}
 .logo {
   display: inline-block;
   color: var(--black);
@@ -613,12 +616,7 @@ input[type="submit"] {
   transition: 0.3s;
 }
 .logo:hover {
-  color: var(--btnHover);
-  transform: translateY(-2px);
-}
-.logo:hover span::before {
-  bottom: -2px;
-  background-color: var(--yellow);
+  color: var(--green);
 }
 .header-menu {
   display: none;

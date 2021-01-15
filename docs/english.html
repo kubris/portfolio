@@ -154,9 +154,17 @@
 		<header id="header" class="header">
 			<div class="header-nav__container">
 				<div class="header-nav">
-					<a class="logo" href="#">
-						<span class="underline">AM</span>
-					</a>
+					<div class="logo-block">
+						<a class="logo" href="#">
+							<span class="underline">AM</span>
+						</a>
+						<!-- language btn -->
+						<div class="language-block">
+							<a class="language-item active">EN</a>
+							<a href="index.html" class="language-item">RU</a>
+						</div>
+						<!-- // language btn -->
+					</div>
 
 					<nav class="header-menu">
 						<div class="menu-list">
@@ -846,7 +854,7 @@
 									name="email"
 								/>
 								<label for="contacts-form__email" class="contacts-form__label"
-									>Your's Email</label
+									>Email</label
 								>
 							</div>
 
@@ -858,7 +866,7 @@
 									name="subject"
 								/>
 								<label for="contacts-form__title" class="contacts-form__label"
-									>Letter title</label
+									>Title</label
 								>
 							</div>
 
@@ -873,7 +881,7 @@
 								>
 							</div>
 
-							<button type="submit" class="btn">Submit</button>
+							<button type="submit" class="btn">Send message</button>
 						</form>
 						<div id="answer"></div>
 					</div>
