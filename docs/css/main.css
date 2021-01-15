@@ -640,7 +640,7 @@ input[type="submit"] {
   .menu-link:focus::before {
     content: "";
     position: absolute;
-    border: 3px dashed #ea736d;
+    border: 1px dashed #3ebea9;
     top: 2px;
     bottom: 1px;
     left: -5px;
