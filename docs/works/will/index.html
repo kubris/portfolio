@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+
+	<title>WillMart</title>
+
+	<meta name="author" content="Андрей Мартынов">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__top-line">
+
+				<a href="#" class="top-line__logo">
+					<img src="./img/svg/logo.svg" alt="WillMart">
+					<span>AndMart</span>
+				</a> <!-- // top-line__logo -->
+
+				<div class="top-line__container">
+
+					<div class="top-line__up-content up-content">
+
+						<div class="up-content__city">
+							<p>My city: 
+								<a href="#">Bangalore</a>
+							</p>
+						</div>
+
+						<div class="up-content__phone">
+							<a href="tel:999-777-55-44">999-777-55-44</a>
+						</div>
+
+						<div class="up-content__nav nav">
+							<ul class="nav__list">
+								<li class="nav__item"><a href="#" class="nav__link">Shipping</a></li>
+								<li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
+								<li class="nav__item"><a href="#" class="nav__link">Company</a></li>
+								<li class="nav__item"><a href="#" class="nav__link">My account</a></li>
+							</ul>
+						</div> <!-- // up-content__nav nav -->
+
+					</div> <!-- // top-line__up-wrapper up-content -->
+
+					<div class="top-line__down-content down-content">
+						<div class="down-content__search">
+							<form action="#" class="search__form">
+								<input class="search__field" type="search" placeholder="Search products" name="search__field">
+								<input type="submit" name="search__button" class="search__button" value="">
+							</form>
+						</div>
+						<div class="down-content__cart">
+							<button class="cart__btn">My cart
+								<span class="cart__num">12</span>
+							</button>
+						</div>
+					</div> <!-- // top-line__down-content down-content -->
+
+				</div> <!-- // top-line__content -->
+
+			</div> <!-- // header__top-line -->
+
+			<div class="header__bottom-line">
+				<div class="bottom-line__nav-goods nav-goods">
+					<ul class="nav-goods__list">
+						<li class="nav-goods__item"><a href="#" class="nav-goods__link nav-goods__arrow">Women</a></li>
+						<li class="nav-goods__item"><a href="#" class="nav-goods__link nav-goods__arrow">Men</a></li>
+						<li class="nav-goods__item"><a href="#" class="nav-goods__link nav-goods__arrow">Kids</a></li>
+						<li class="nav-goods__item"><a href="#" class="nav-goods__link nav-goods__arrow">Shoes</a></li>
+						<li class="nav-goods__item"><a href="#" class="nav-goods__link nav-goods__arrow">Electronics</a></li>
+						<li class="nav-goods__item"><a href="#" class="nav-goods__link nav-goods__arrow">Sports</a></li>
+						<li class="nav-goods__item"><a href="#" class="nav-goods__link nav-goods__arrow">Home&Furniture</a></li>
+						<li class="nav-goods__item"><a href="#" class="nav-goods__link nav-goods__arrow">Brands</a></li>
+						<li class="nav-goods__item"><a href="#" class="nav-goods__link">Offers</a></li>
+					</ul>
+				</div>
+			</div> <!-- // header__bottom-line -->
+		</div>
+	</header>
+
+	<section class="banner"> <!-- Big Image -->
+		<img class="banner__img" src="./img/banner.jpg" alt="WillMart">
+		<div class="banner__overlay"></div>
+	</section> <!-- // banner -->
+
+	<div class="container"> <!-- 1160px -->
+		<section class="deals"> <!-- Deals of the day -->
+			<div class="deals__container">
+				<div class="deals__content">
+					<h2>Deals of the Day</h2>
+					<ul class="deals__list">
+						<li class="deals__item">
+							<a href="#"><img src="./img/deals/groceries.jpg" class="deals__img-link" alt="Grocery & Essentials"></a>
+							<h4>Grocery & Essentials</h4>
+							<p class="deals__sales">Upto 30% Off</p>
+							<a href="#" class="deals__txt-link">Grab Now</a>
+						</li>
+						<li class="deals__item">
+							<a href="#"><img src="./img/deals/creams.jpg" class="deals__img-link" alt="Best of Creams"></a>
+							<h4>Best of Creams</h4>
+							<p class="deals__sales">Upto 30% Off</p>
+							<a href="#" class="deals__txt-link">Lakme & More</a>
+						</li>
+						<li class="deals__item">
+							<a href="#"><img src="./img/deals/smart.jpg" class="deals__img-link" alt="Smart Devices"></a>
+							<h4>Smart Devices</h4>
+							<p class="deals__sales">Upto 30% Off</p>
+							<a href="#" class="deals__txt-link">Best Deals</a>
+						</li>
+						<li class="deals__item">
+							<a href="#"><img src="./img/deals/laptops.jpg" class="deals__img-link" alt="Best Selling Laptops"></a>
+							<h4>Best Selling Laptops</h4>
+							<p class="deals__sales">Upto 20% Off</p>
+							<a href="#" class="deals__txt-link">HP, Dell & More</a>
+						</li>
+					</ul>
+				</div>
+				<div class="deals__poster">
+					<img src="./img/posters/offer_block.jpg" alt="Today's offer" class="poster__img">
+				</div>
+			</div><!-- // deals-container -->
+		</section> <!-- // deals -->
+
+		<section class="best-selling"> <!-- Best Selling Products -->
+			<h2>Best Selling Products</h2>
+			<ul class="best-selling__list">
+				<li class="best-selling__item">
+					<div class="best-selling__card card-product">
+
+						<a href="#" class="card-product__img-block">
+							<img class="card-product__img" src="./img/best-selling/women and trimerrs.png" alt="Best selling">
+						</a>
+
+						<div class="card-product__txt-container">
+							<div class="card-product__description">
+								<h3>Women Essential Kit</h3>
+								<p>Includes all the necessary things for daily health care</p>
+							</div>
+
+							<div class="card-product__offer product-offer">
+								<span class="product-offer__price">299.95</span>
+								<button class="product-offer__button">Buy now</button>
+							</div>
+						</div> <!-- // card-product__txt-container -->
+
+					</div> <!-- // best-selling__card card-product -->
+				</li>
+				<li class="best-selling__item">
+					<div class="best-selling__card card-product">
+						<a href="#" class="card-product__img-block">
+							<img class="card-product__img" src="./img/best-selling/car accessories.png" alt="Best selling">
+						</a>
+						<div class="card-product__description">
+							<h3>Car Cover</h3>
+							<p>Get best deals on all types of car covers from verified sellers</p>
+						</div>
+						<div class="card-product__offer product-offer">
+							<span class="product-offer__price">299.95</span>
+							<button class="product-offer__button">Buy now</button>
+						</div>
+					</div>
+				</li>
+				<li class="best-selling__item">
+					<div class="best-selling__card card-product">
+						<a href="#" class="card-product__img-block">
+							<img class="card-product__img" src="./img/best-selling/electronics and accessories.png" alt="Best selling">
+						</a>
+						<div class="card-product__description">
+							<h3>Laptops</h3>
+							<p>Buy latest pocket friendly laptops with specification</p>
+						</div>
+						<div class="card-product__offer product-offer">
+							<span class="product-offer__price">299.95</span>
+							<button class="product-offer__button">Buy now</button>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</section> <!-- // best-selling -->
+
+		<section class="latest"> <!-- Latest Launches -->
+			<h2>Latest Launches</h2>
+			<ul class="latest__list">
+				<li class="latest__item">
+					<a href="#">
+						<img src="./img/latest/nokia-7-2.jpg" class="latest__img" alt="Grocery & Essentials">
+					
+						<div class="latest__txt-link"><h4>MI A2 (64 gb)</h4>
+							<p class="latest__sales">4 GB RAM</p>
+							<span class="latest__price">7000</span>
+						</div>
+					</a>
+				</li>
+				<li class="latest__item">
+					<a href="#"><img src="./img/latest/Redmi 8a.jpg" class="latest__img" alt="Grocery & Essentials"></a>
+					<h4>
+						<a href="#" class="latest__txt-link">Redmi Note 7S</a>
+					</h4>
+					<p class="latest__sales">3 GB RAM</p>
+					<span class="latest__price">11000</span>
+				</li>
+				<li class="latest__item">
+					<a href="#"><img src="./img/latest/motorolla.jpg" class="latest__img" alt="Grocery & Essentials"></a>
+					<h4>
+						<a href="#" class="latest__txt-link">Motorola One</a>
+					</h4>
+					<p class="latest__sales">4 GB RAM</p>
+					<span class="latest__price">11000</span>
+				</li>
+				<li class="latest__item">
+					<a href="#"><img src="./img/latest/note7.jpg" class="latest__img" alt="Grocery & Essentials"></a>
+					<h4>
+						<a href="#" class="latest__txt-link">Redmi Note 7</a>
+					</h4>
+					<p class="latest__sales">4 GB RAM</p>
+					<span class="latest__price">11000</span>
+				</li>
+				<li class="latest__item">
+					<a href="#"><img src="./img/latest/f11pro.jpg" class="latest__img" alt="Grocery & Essentials"></a>
+					<h4>
+						<a href="#" class="latest__txt-link">OPPO F11 Pro</a>
+					</h4>
+					<p class="latest__sales">6 GB RAM</p>
+					<span class="latest__price">11000</span>
+				</li>
+				<li class="latest__item">
+					<a href="#"><img src="./img/latest/realme-xt.jpg" class="latest__img" alt="Grocery & Essentials"></a>
+					<h4>
+						<a href="#" class="latest__txt-link">Realme C2</a>
+					</h4>
+					<p class="latest__sales">2 GB RAM</p>
+					<span class="latest__price">11000</span>
+				</li>
+			</ul>
+		</section> <!-- // latest -->
+
+		<section class="trending"> <!-- Trending Offers -->
+			<h2>Trending Offers</h2>
+			<ul class="trending__list">
+				<li class="trending__item">
+					<a href="#"><img src="./img/trending/sanitizers.jpg" class="trending__img-link" alt="Grocery & Essentials"></a>
+					<h4>Sanitizers</h4>
+					<p class="trending__sales">Extra 5% Off</p>
+					<a href="#" class="trending__txt-link">Hurry!</a>
+				</li>
+				<li class="trending__item">
+					<a href="#"><img src="./img/trending/maskss.jpg" class="trending__img-link" alt="Grocery & Essentials"></a>
+					<h4>Sanitizers</h4>
+					<p class="trending__sales">Extra 5% Off</p>
+					<a href="#" class="trending__txt-link">Hurry!</a>
+				</li>
+				<li class="trending__item">
+					<a href="#"><img src="./img/trending/chairss.jpg" class="trending__img-link" alt="Grocery & Essentials"></a>
+					<h4>Sanitizers</h4>
+					<p class="trending__sales">Extra 5% Off</p>
+					<a href="#" class="trending__txt-link">Hurry!</a>
+				</li>
+				<li class="trending__item">
+					<a href="#"><img src="./img/trending/bed.jpg" class="trending__img-link" alt="Grocery & Essentials"></a>
+					<h4>Sanitizers</h4>
+					<p class="trending__sales">Extra 5% Off</p>
+					<a href="#" class="trending__txt-link">Hurry!</a>
+				</li>
+				<li class="trending__item">
+					<a href="#"><img src="./img/trending/handbags.jpg" class="trending__img-link" alt="Grocery & Essentials"></a>
+					<h4>Sanitizers</h4>
+					<p class="trending__sales">Extra 5% Off</p>
+					<a href="#" class="trending__txt-link">Hurry!</a>
+				</li>
+				<li class="trending__item">
+					<a href="#"><img src="./img/trending/flowers.jpg" class="trending__img-link" alt="Grocery & Essentials"></a>
+					<h4>Paintings</h4>
+					<p class="trending__sales">Extra 5% Off</p>
+					<a href="#" class="trending__txt-link">Grab Now!</a>
+				</li>
+			</ul>
+		</section> <!-- // trending -->
+	</div> <!-- // container -->
+
+	<section class="discover"> <!-- Discover Latest -->
+		<h2 class="discover__header">Discover Latest</h2>
+		<p class="discover__description">
+			Explore and browse new and vintage pieces
+		</p>
+		<div class="discover__offer offer">
+			<ul class="offer__list">
+				<li class="offer__item">
+					<a href="" class="offer__img-link">
+						<img src="./img/discover/d1.jpg" alt="Headphone" class="offer__img">
+					</a>
+					<div class="offer__txt-block txt-block">
+						<a class="txt-block__tag-link">Electronic</a>
+						<h4 class="txt-block__header">
+							Jeanne Moreau's Best On-Screen Headphones
+						</h4>
+						<p class="txt-block__text">
+							As it is announced that the French actress Jeanne Moreau has died at the age of 89, Vogue looks back on her best style moments on-screen.
+						</p>
+						<a href="#" class="txt-block__link-more">Read more &gt;</a>
+					</div>
+				</li>
+				<li class="offer__item li-cover">
+					<a href="" class="offer__img-link">
+						<img src="./img/discover/d1.jpg" alt="Headphone" class="offer__img">
+					</a>
+					<div class="offer__txt-block txt-block">
+						<a class="txt-block__tag-link">Electronic</a>
+						<h4 class="txt-block__header">
+							Jeanne Moreau's Best On-Screen Headphones
+						</h4>
+						<p class="txt-block__text">
+							As it is announced that the French actress Jeanne Moreau has died at the age of 89, Vogue looks back on her best style moments on-screen.
+						</p>
+						<a href="#" class="txt-block__link-more">Read more &gt;</a>
+					</div>
+				</li>
+				<li class="offer__item">
+					<a href="" class="offer__img-link">
+						<img src="./img/discover/d1.jpg" alt="Headphone" class="offer__img">
+					</a>
+					<div class="offer__txt-block txt-block">
+						<a class="txt-block__tag-link">Electronic</a>
+						<h4 class="txt-block__header">
+							Jeanne Moreau's Best On-Screen Headphones
+						</h4>
+						<p class="txt-block__text">
+							As it is announced that the French actress Jeanne Moreau has died at the age of 89, Vogue looks back on her best style moments on-screen.
+						</p>
+						<a href="#" class="txt-block__link-more">Read more &gt;</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section> <!-- // Discover Latest -->
+
+	<section class="newsletter">
+		<h2 class="newsletter__header">Weekly Newsletter</h2>
+		<p class="newsletter__sub-header">
+			Sign up to our weekly newsletter to keep up-to-date with our latest items
+		</p>
+		<form action="" class="newsletter__subscribe">
+			<input type="text" class="newsletter__text" placeholder="Enter Email Address">
+			<input type="button" class="newsletter__button" value="Subscribe">
+		</form>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__block--align">
+
+				<div class="footer__block">
+					<h3 class="block__header">Products</h3>
+					<ul class="block__list">
+						<li class="block__item">
+							<a href="#" class="block__link">Headphones</a>
+						</li>
+						<li class="block__item">
+							<a href="#" class="block__link">Earphones</a>
+						</li>
+						<li class="block__item">
+							<a href="#" class="block__link">Speakers</a>
+						</li>
+						<li class="block__item">
+							<a href="#" class="block__link">Accessories</a>
+						</li>
+						<li class="block__item">
+							<a href="#" class="block__link">Collaborations</a>
+						</li>
+						<li class="block__item">
+							<a href="#" class="block__link">Beatsaudio</a>
+						</li>
+						<li class="block__item">
+							<a href="#" class="block__link">Furniture</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer__block">
+					<h3 class="block__header">Support</h3>
+					<ul class="block__list">
+						<li class="block__item">
+							<a href="#" class="block__link">Product help</a>
+						</li>
+						<li class="block__item">
+							<a href="#" class="block__link">Service & warranty</a>
+						</li>
+						<li class="block__item">
+							<a href="#" class="block__link">Authorized service providers</a>
+						</li>
+						<li class="block__item">
+							<a href="#" class="block__link">Contact support</a>
+						</li>
+						<li class="block__item">
+							<a href="#" class="block__link">International numbers</a>
+						</li>
+
+					</ul>
+				</div>
+
+				<div class="footer__block">
+					<h3 class="block__header">Willmart</h3>
+					<ul class="block__list">
+						<li class="block__item">
+							<a href="#" class="block__link">Product help</a>
+						</li>
+						<li class="block__item">
+							<a href="#" class="block__link">News and events</a>
+						</li>
+						<li class="block__item">
+							<a href="#" class="block__link">Promotion terms</a>
+						</li>
+						<li class="block__item">
+							<a href="#" class="block__link">Privacy policy</a>
+						</li>
+						<li class="block__item">
+							<a href="#" class="block__link">Trademark</a>
+						</li>
+						<li class="block__item">
+							<a href="#" class="block__link">Terms of use</a>
+						</li>
+						<li class="block__item">
+							<a href="#" class="block__link">Cookies</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer__block">
+					<h3 class="block__header">Follow Us</h3>
+					<ul class="block__social">
+						<li class="social__item">
+							<a href="#" class="social__link">
+								<img class="social__img" src="img/social/i.png" alt="Instagram">
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link">
+								<img class="social__img" src="img/social/f.png" alt="Instagram">
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link">
+								<img class="social__img" src="img/social/t.png" alt="Instagram">
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link">
+								<img class="social__img" src="img/social/w.png" alt="Instagram">
+							</a>
+						</li>
+					</ul>
+				</div>
+
+			</div> <!-- // .footer__block--align -->
+
+			<div class="footer__copyright">
+				Copyright © 2020 WillMart Inc. - All rights reserved.
+			</div>
+
+		</div>	<!-- .container -->
+	</footer>
+
+	<!-- <script src="js/custom.js"></script> -->
+</body>
+</html>

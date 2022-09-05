@@ -1,0 +1,155 @@
+.section-tasks {
+	position: relative;
+	padding: 73px 0 45px;
+	border-bottom: 1px solid #e6e6e6;
+	overflow: hidden;
+
+	&::before {
+		content: "";
+		position: absolute;
+		left: 50%;
+		top: 0;
+		transform: translate(-50%, -50%)
+		rotate(45deg);
+
+		width: 68px;
+		height: 68px;
+		background-color: #a4eecb;
+	}
+
+	@media (min-width: 768px) {
+		padding: 65px 0 43px;
+
+		&::before {
+			display: none;
+		}
+	}
+	
+	@media (min-width: 1200px) {
+		padding: 94px 0 24px;
+
+		&::before {
+			display: block;
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translate(-50%, -50%)
+			rotate(45deg);
+	
+			width: 132px;
+			height: 132px;
+			background-color: #a4eecb;
+		}
+	}
+}
+
+.section-tasks__row {
+	padding: 0 7px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+
+	@media (min-width: 768px) {
+		padding-left: 30px;
+		padding-right: 29px;
+
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	
+	@media (min-width: 1200px) {
+		padding-left: 100px;
+		padding-right: 146px;
+	}
+}
+
+.section-tasks__text-block {
+	margin-bottom: 50px;
+	max-width: 440px;
+	text-align: center;
+
+	@media (min-width: 768px) {
+		padding-top: 20px;
+		margin-bottom: 0;
+		order: 1;
+		max-width: 376px;
+		text-align: left;
+		align-self: flex-start;
+	}
+	
+	@media (min-width: 1200px) {
+		max-width: 440px;
+		order: 0;
+		align-self: unset;
+		padding-top: 0;
+	}
+}
+
+.text-block__sub-title { 
+	margin-bottom: 33px;
+	font-size: 14px;
+	letter-spacing: 2.8px;
+
+	@media (min-width: 768px) {
+		margin-bottom: 37px;
+	}
+	
+	@media (min-width: 1200px) {
+		margin-bottom:39px;
+	}
+}
+
+.text-block__title {
+	margin-bottom: 33px;
+
+	@media (min-width: 768px) {
+		margin-bottom: 16px;
+	}
+	
+	@media (min-width: 1200px) {
+		margin-bottom: 43px;
+	}
+}
+
+.text-block__text {
+	line-height: 1.72;
+
+	@media (min-width: 768px) {
+		line-height: 2.2;
+
+		& p .txt-break {
+			display: block;
+		}
+	}
+
+	@media (min-width: 1200px) {
+		max-width: unset;
+
+		& p .txt-break {
+			display: none;
+		}
+	}
+}
+
+.section-task__img-block {
+	padding: 0 37px;
+
+	& img {
+		transition: transform 2s linear;
+	}
+	&:hover img {
+		transform: scale(1.1);
+	}
+
+	@media (min-width: 768px) {
+		padding: 0;
+		max-width: 270px;
+	}
+	
+	@media (min-width: 1200px) {
+		max-width: unset;
+	}
+}

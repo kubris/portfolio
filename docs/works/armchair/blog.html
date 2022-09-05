@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:ital,wght@0,400;0,600;1,300&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/style.min.css" />
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="container">
+					<div class="header__inner">
+						<nav class="menu">
+							<ul class="menu__list">
+								<li class="menu__list-item">
+									<a class="menu__list-link" href="about.html">About</a>
+								</li>
+								<li class="menu__list-item">
+									<a class="menu__list-link" href="gallery.html">Gallery</a>
+								</li>
+							</ul>
+						</nav>
+						<a class="logo" href="index.html">
+							<img src="images/logo.png" alt="Logotype" />
+						</a>
+						<nav class="menu">
+							<ul class="menu__list">
+								<li class="menu__list-item">
+									<a class="menu__list-link" href="blog.html">Blog</a>
+								</li>
+								<li class="menu__list-item">
+									<a class="menu__list-link" href="contacts.html">Contact</a>
+								</li>
+							</ul>
+						</nav>
+						<button class="header__btn-menu">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+						<button class="header__btn">
+							<img src="images/icon_menu.svg" alt="icon menu" />
+						</button>
+						<div class="rightside-menu rightside-menu--close">
+							<button class="rightside-menu__close">
+								<img src="images/close.svg" alt="close button" />
+							</button>
+							<div class="rightside-menu__content">
+								<a href="#" class="rightside-menu__logo">
+									<img src="images/logo-big.png" alt="big logo" />
+								</a>
+								<h4 class="rightside-menu__title">Furniture for life</h4>
+								<p class="rightside-menu__text">
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+									Deserunt culpa eius corrupti. Sit voluptatum iure assumenda ad
+									consequuntur dolore quam! Fugiat!
+								</p>
+								<img
+									class="rightside-menu__images"
+									src="images/rightside-img.jpg"
+									alt="Images"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<main class="main">
+				<div class="breadcrumbs">
+					<div class="container">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item">
+								<a class="breadcrumbs__link" href="#">Home</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<a class="breadcrumbs__link" href="#">Blog</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<section class="blog">
+					<div class="container">
+						<div class="blog__inner">
+							<div class="blog__items">
+								<div class="blog__item">
+									<img
+										class="blog__item-img"
+										src="images/blog/blog-1.jpg"
+										alt="image"
+									/>
+									<div class="blog__item-info">
+										<span class="blog__item-date">August 15, 2020</span> |
+										<a class="blog__item-author" href="#">by Ann Summers</a> |
+										<a class="blog__item-theme" href="#">Bedroom Furniture</a>
+									</div>
+									<a href="blog-one.html" class="blog__item-link">
+										<h3 class="blog__item-title">
+											Red selfies edison bulb four dollar toast humblebrag for
+											the furniture
+										</h3>
+									</a>
+									<p class="blog__item-text">
+										Everyday carry actually neutra authentic kogi shabby chic
+										migas small batch craft beer. Literally williamsburg tote
+										bag farm-to-table mustache ugh deep v irony. Af man bun
+										copper mug iPhone enamel pin pug selvage hammock palo santo
+										godard thundercats coloring book yuccie woke. Ugh pok pok
+										taxidermy pabst enamel pin edison bulb farm-to-table
+									</p>
+								</div>
+								<blockquote class="blog__blockquote">
+									“Simplicity is not the goal. It is the by-product of a good
+									idea and modest expectations”
+									<div class="blog__blockquote-author">Paul Rand</div>
+								</blockquote>
+								<div class="blog__item article-popup">
+									<div class="article-popup__box">
+										<img
+											class="blog__item-img"
+											src="images/blog/blog-2.jpg"
+											alt="image"
+										/>
+										<a
+											class="blog__item-popup"
+											data-fancybox
+											href="https://youtu.be/YC427llhIHg"
+										>
+											<img
+												class="blog__item-play"
+												src="images/play-button.svg"
+												alt="play button"
+											/>
+										</a>
+									</div>
+									<div class="blog__item-info">
+										<span class="blog__item-date">August 12, 2020</span> |
+										<a class="blog__item-author" href="#">by Lux Morningstar</a>
+										|
+										<a class="blog__item-theme" href="#">Design</a>
+									</div>
+									<a href="#" class="blog__item-link">
+										<h3 class="blog__item-title">Authentic kogi shabby chic</h3>
+									</a>
+								</div>
+
+								<div class="blog__item article-slider">
+									<div class="article-slider__box">
+										<img
+											class="article-slider__img"
+											src="images/blog/blog-3.jpg"
+											alt="images"
+										/>
+										<img
+											class="article-slider__img"
+											src="images/blog/blog-3.jpg"
+											alt="images"
+										/>
+										<img
+											class="article-slider__img"
+											src="images/blog/blog-3.jpg"
+											alt="images"
+										/>
+									</div>
+									<div class="blog__item-info">
+										<span class="blog__item-date">August 18, 2020</span> |
+										<a class="blog__item-author" href="#">by Ann Summers</a> |
+										<a class="blog__item-theme" href="#">Table Furniture</a>
+									</div>
+									<a href="#" class="blog__item-link">
+										<h3 class="blog__item-title">
+											Semiotics fixie four dollar toast, next level woke
+										</h3>
+									</a>
+									<p class="blog__item-text">
+										Everyday carry actually neutra authentic kogi shabby chic
+										migas small batch craft beer. Literally williamsburg tote
+										bag farm-to-table mustache ugh deep v irony. Af man bun
+										copper mug iPhone enamel pin pug selvage hammock palo santo
+										godard thundercats coloring book yuccie woke. Ugh pok pok
+										taxidermy pabst enamel pin edison bulb farm-to-table
+									</p>
+								</div>
+								<div class="pagination">
+									<a
+										class="pagination__arrow pagination__arrow--disabled"
+										href="#"
+									>
+										<img
+											class="pagination__arrow-icon"
+											src="images/prev.svg"
+											alt="prev arrow"
+										/>
+									</a>
+									<ul class="pagination__list">
+										<li class="pagination__item">
+											<a
+												class="pagination__num pagination__num--active"
+												href="#"
+												>1</a
+											>
+										</li>
+										<li class="pagination__item">
+											<a class="pagination__num" href="#">2</a>
+										</li>
+									</ul>
+									<a class="pagination__arrow" href="#">
+										<img
+											class="pagination__arrow-icon"
+											src="images/next.svg"
+											alt="next arrow"
+										/>
+									</a>
+								</div>
+							</div>
+
+							<aside class="aside">
+								<form class="aside__search">
+									<input
+										class="aside__search-input"
+										type="text"
+										placeholder="Search"
+									/>
+									<button class="aside__search-btn" type="submit">
+										<img src="images/search-icon.svg" alt="Search icon" />
+									</button>
+								</form>
+
+								<div class="blog__category">
+									<h6 class="blog__category-title">Categories</h6>
+									<ul class="blog__category-list">
+										<li class="blog__category-item">
+											<a class="blog__category-link" href="#">
+												Dining room (1)
+											</a>
+										</li>
+										<li class="blog__category-item">
+											<a class="blog__category-link" href="#">
+												Office furniture (12)
+											</a>
+										</li>
+										<li class="blog__category-item">
+											<a class="blog__category-link" href="#">
+												Simple interior design (2)
+											</a>
+										</li>
+										<li class="blog__category-item">
+											<a class="blog__category-link" href="#"> Design (4) </a>
+										</li>
+										<li class="blog__category-item">
+											<a class="blog__category-link" href="#">
+												Bedroom Furniture (1)
+											</a>
+										</li>
+									</ul>
+								</div>
+
+								<div class="recent-posts">
+									<h6 class="recent-posts__title">Recent Posts</h6>
+									<ul class="recent-posts__list">
+										<li class="recent-posts__item">
+											<a class="recent-posts__item-title" href="#">
+												Cred selfies edison bulb four dollar toast humblebrag
+											</a>
+											<span class="recent-posts__date">August 10, 2020</span> |
+											<a class="recent-posts__author" href="#"
+												>by Ann Summers</a
+											>
+										</li>
+										<li class="recent-posts__item">
+											<a class="recent-posts__item-title" href="#">
+												Semiotics fixie four dollar toast, next level woke
+												scenester direct trade photo booth
+											</a>
+											<span class="recent-posts__date">September 30 ,2020</span>
+											|
+											<a class="recent-posts__author" href="#"
+												>by Ann Summers</a
+											>
+										</li>
+										<li class="recent-posts__item">
+											<a class="recent-posts__item-title" href="#">
+												Cred selfies edison bulb four dollar toast humblebrag
+											</a>
+											<span class="recent-posts__date">May 2, 2020</span> |
+											<a class="recent-posts__author" href="#"
+												>by Ann Summers</a
+											>
+										</li>
+									</ul>
+								</div>
+
+								<div class="blog__tags">
+									<h6 class="blog__tags-title">Tags</h6>
+									<a class="blog__tags-link" href="#">Dining room furniture</a>
+									<a class="blog__tags-link" href="#">Chair</a>
+									<a class="blog__tags-link" href="#">Table</a>
+									<a class="blog__tags-link" href="#">Bedroom</a>
+									<a class="blog__tags-link" href="#">Office Furniture</a>
+								</div>
+
+								<ul class="blog__social">
+									<li class="blog__social-item">
+										<a class="blog__social-link" href="#">
+											<img
+												class="blog__social-img"
+												src="images/facebook.svg"
+												alt="facebook"
+											/>
+										</a>
+									</li>
+									<li class="blog__social-item">
+										<a class="blog__social-link" href="#">
+											<img
+												class="blog__social-img"
+												src="images/instagram.svg"
+												alt="instagram"
+											/>
+										</a>
+									</li>
+									<li class="blog__social-item">
+										<a class="blog__social-link" href="#">
+											<img
+												class="blog__social-img"
+												src="images/pinterest.svg"
+												alt="pinterest"
+											/>
+										</a>
+									</li>
+									<li class="blog__social-item">
+										<a class="blog__social-link" href="#">
+											<img
+												class="blog__social-img"
+												src="images/whatsapp.svg"
+												alt="whatsapp"
+											/>
+										</a>
+									</li>
+									<li class="blog__social-item">
+										<a class="blog__social-link" href="#">
+											<img
+												class="blog__social-img"
+												src="images/youtube.svg"
+												alt="youtube"
+											/>
+										</a>
+									</li>
+								</ul>
+							</aside>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<footer class="footer">
+				<div class="footer__content">
+					<div class="container">
+						<div class="footer__inner">
+							<div class="footer__info">
+								<h5 class="footer__info-title">Contact Us</h5>
+								<p class="footer__info-text">
+									Keffiyeh poutine etsy, paleo cray put a bird on it microdosing
+									schlitz you probably occupy
+								</p>
+								<a class="info-email" href="mailto:ouremailaddress@mail.com">
+									ouremailaddress@mail.com
+								</a>
+								<form class="footer__form">
+									<input
+										class="footer__form-input"
+										type="email"
+										placeholder="Subscribe by email"
+									/>
+									<buttom class="footer__form-button" type="submit"
+										>Send</buttom
+									>
+								</form>
+							</div>
+							<ul class="footer__social">
+								<li class="footer__social-item">
+									<a
+										class="footer__social-link footer__social-link--facebook"
+										href="#"
+										>Facebook</a
+									>
+								</li>
+								<li class="footer__social-item">
+									<a
+										class="footer__social-link footer__social-link--instagram"
+										href="#"
+										>Instagram</a
+									>
+								</li>
+								<li class="footer__social-item">
+									<a
+										class="footer__social-link footer__social-link--printerest"
+										href="#"
+										>Printerest</a
+									>
+								</li>
+								<li class="footer__social-item">
+									<a
+										class="footer__social-link footer__social-link--whatsapp"
+										href="#"
+										>WhatsApp</a
+									>
+								</li>
+								<li class="footer__social-item">
+									<a
+										class="footer__social-link footer__social-link--youtube"
+										href="#"
+										>Youtube</a
+									>
+								</li>
+							</ul>
+							<nav class="footer__menu">
+								<ul class="footer__menu-list">
+									<li class="footer__menu-item">
+										<a class="footer__menu-link" href="#">Delivery</a>
+									</li>
+									<li class="footer__menu-item">
+										<a class="footer__menu-link" href="#">FAQ</a>
+									</li>
+									<li class="footer__menu-item">
+										<a class="footer__menu-link" href="#">Help</a>
+									</li>
+									<li class="footer__menu-item">
+										<a class="footer__menu-link" href="#">More About Us</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="footer__copyright">
+					<div class="container">
+						<p>2229 West Schaumburg Rd. Schaumburg, IL 60194</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<script src="js/main.min.js"></script>
+	</body>
+</html>

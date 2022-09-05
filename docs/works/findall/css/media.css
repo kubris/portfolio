@@ -1,0 +1,115 @@
+@media (min-width: 576px) {
+	.carousel-title {
+		font-size: 30px;
+	}
+	.carousel-control-prev,
+	.carousel-control-next {
+		display: flex;
+	}
+	.carousel-form .selectpicker + button {
+		padding: 12px 18px;
+		font-size: 15px;
+		line-height: 24px;
+	}
+	.carousel-btn {
+		padding: 12px 46px;
+		font-size: 15px;
+	}
+}	
+@media (min-width: 768px) {
+/*	.top-navbar-block {
+		background-color: unset;
+		}*/
+		.navbar-nav { 
+			justify-content: flex-end; 
+		}
+		.carousel-title {
+			font-size: 45px;
+		}
+		.carousel-form {
+			margin-bottom: 35px;
+			flex-direction: row;
+			max-width: 665px;
+		}
+		.carousel-form .dropdown {
+			margin-bottom: 0;
+		}
+		.popular-categories {
+			display: block;
+		}
+	}
+
+	@media (min-width: 992px) {
+		header {
+			padding: 0 50px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 60px;
+			z-index: 1;
+		}
+		.navbar {
+			padding: 0 15px;
+			align-items: center;
+		}
+		.logo-light {display: block;}
+		.logo-dark {display: none;}
+
+		.top-menu--main-page {
+			padding-left: 0;
+		}
+		.top-menu--main-page .navbar-nav {
+			border-top: none;
+			margin-top: 0;
+		}
+		.top-menu--main-page .navbar-nav .nav-link {
+			color: #ffffff;
+			border-bottom: none;
+		}
+		.top-navbar-block {
+			background-color: unset;
+		}
+		.top-navbar-block .nav-item {
+			margin-top: 0;
+		}
+		.top-menu--main-page .top-navbar-main-dropdown {
+			position: static;
+		}
+		.top-navbar-block .dropdown:hover .dropdown-menu {
+			margin-top:0;
+			display:block;
+		}
+		.btn-block-cart { display: block; }
+		.btn-block-text { display: block; }
+		.top-navbar--btn-block a {
+			display: inline-block;
+		}
+		.btn-block-link > .icon-font-elegant {
+			top: 7px;
+			left: -17px;
+			color: #ffffff;
+		}
+		/* -- Dropdown -- */
+		.dropdown .dropdown-toggle img {
+			display: none;
+		}
+		.top-navbar-block .dropdown:hover .dropdown-menu {
+			margin-top:0;
+			display:block;
+		}
+
+		/* == Carusel == */
+		.top-carousel,
+		.carousel.pointer-event {
+			margin-top: 0;
+		}
+		.top-menu--main-page .top-navbar-main-dropdown {
+			border: none;
+			background-color: transparent;
+		}
+	}
+
+	@media (min-width: 1200px) {
+
+	}

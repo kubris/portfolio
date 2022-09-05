@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Ресторан русской кухни</title>
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- Font Icon -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+	<!-- Main css -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<div class="main">
+
+		<div class="container">
+			<div class="booking-content">
+				<div class="booking-image">
+					<img class="booking-img" src="images/form-img.jpg" alt="Booking Image">
+				</div>
+				<div class="booking-wrapper">
+					<form id="booking-form">
+						<h2>Закажите место на&nbsp;ужин</h2>
+						<input type="hidden" name="project_name" value="Нижняя форма с Главной страницы">
+						<input type="hidden" name="form_subject" value="Заказ столика в ресторане Русской кухни">
+						<div class="form-group form-input">
+							<input type="text" name="Имя" id="name" value="" required/>
+							<label for="name" class="form-label">Ваше имя</label>
+						</div>
+						<div class="form-group form-input">
+							<input type="tel" name="phone" id="phone" required />
+							<label for="phone" class="form-label">Ваш телефон</label>
+						</div>
+						<div class="form-group form-input">
+								<select name="Время" id="time" required>
+									<option value="Уточняют">Время</option>
+									<option value="18:00">18:00</option>
+									<option value="19:00">19:00</option>
+									<option value="20:00">20:00</option>
+								</select>
+						</div>
+						<div class="form-group form-input">
+								<select name="Меню" id="food" required>
+									<option value="Определятся на месте">Меню</option>
+									<option value="Морские деликатесы">Морские деликатесы</option>
+									<option value="Грибной конфетюр 'УежИкасПерли'">Грибной конфетюр "УежИкасПерли"</option>
+									<option value="Деревенский праздник">Деревенский праздник</option>
+								</select>
+						</div>
+						<div class="form-radio">
+							<label class="label-radio"> Количество персон</label>
+							<div class="radio-item-list">
+								<span class="radio-item">
+									<input type="radio" name="Число_персон" value="2" id="number_people_1" />
+									<label for="number_people_1">2</label>
+								</span>
+								<span class="radio-item active">
+									<input type="radio" name="Число_персон" value="4" id="number_people_2" checked="checked" />
+									<label for="number_people_2">4</label>
+								</span>
+								<span class="radio-item">
+									<input type="radio" name="Число_персон" value="6" id="number_people_3" />
+									<label for="number_people_3">6</label>
+								</span>
+							</div>
+						</div>
+
+						<div class="form-submit">
+							<input type="submit" value="Отправить заявку" class="submit" id="submit" name="submit" />
+							<a href="tel:88000000000" class="vertify-booking">Подтвердите бронирование с&nbsp;вашего&nbsp;телефона</a>
+						</div>
+					</form>
+					<div id="answer"></div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Vendor JS -->
+	<script src="vendor/jquery.min.js"></script>
+	<script src="vendor/jquery.maskedinput.min.js"></script>
+
+	<!-- Custom JS -->
+	<script src="js/main.js"></script>
+</body>
+</html>

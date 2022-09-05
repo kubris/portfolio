@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Форма регистрации</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+
+		<div class="wrapper">
+			<div class="inner">
+				<div class="image-holder">
+					<img src="images/bg-reg.jpg" alt="">
+				</div>
+				<form>
+					<h3>Регистрация</h3>
+					<div class="form-holder active">
+						<input type="text" placeholder="Имя" class="form-control">
+					</div>
+					<div class="form-holder">
+						<input type="text" placeholder="e-mail" class="form-control">
+					</div>
+					<div class="form-holder">
+						<input type="password" placeholder="Пароль" class="form-control" style="font-size: 15px;">
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" checked> Я подтверждаю своё согласие на передачу персональных данных по сети Интернет
+							<span class="checkmark"></span>
+						</label>
+					</div>
+					<div class="form-login">
+						<button>Регистрация</button>
+						<p>Есть аккаунт? <a href="#">Войти</a></p>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+			$(function(){
+				$('.form-holder').delegate("input", "focus", function(){
+					$('.form-holder').removeClass("active");
+					$(this).parent().addClass("active");
+				})
+			})
+		</script>
+	</body>
+</html>

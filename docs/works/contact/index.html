@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,
+		shrink-to-fit=no" />
+	<title>Контактная форма</title>
+	<link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+	<form id="contactForm" class="contact-form">
+		<h2 class="form-title">Контактная форма</h2>
+		<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="Письмо с сайта kubris.site">
+		<input type="hidden" name="admin_email" value="kubris@mail.ru">
+		<input type="hidden" name="form_subject" value="Заявка с контактной формы">
+
+		<!-- END Hidden Required Fields -->
+		<input type="text" name="name" placeholder="Ваше имя*" autocomplete="off" tabindex="1" required><br>
+		<input type="email" name="email" placeholder="E-mail*" autocomplete="off" tabindex="2"><br>
+		<input type="tel" id="form-phone" name="phone" placeholder="Телефон" autocomplete="off" tabindex="3"><br>
+		<textarea type="text" name="text" placeholder="Текст*" maxlength="500" wrap="soft" tabindex="4"></textarea><br>
+		<div class="selection-block">
+			<div class="inputs-block">
+				<input id="radio-1" type="radio" name="radio" value="Верстка" checked>
+				<label for="radio-1">Верстка</label>
+				<input id="radio-2" type="radio" name="radio" value="Доработка">
+				<label for="radio-2" tabindex="5">Доработка</label>
+			</div>
+			<div class="inputs-block">
+				<input id="check-1" type="checkbox" name="check-1" value="Адаптивность" checked>
+				<label for="check-1" tabindex="6">Адаптивность</label>
+				<input id="check-2" type="checkbox" name="check-2" value="JS + PHP">
+				<label for="check-2" tabindex="7">Скрипты</label>
+			</div>
+		</div>
+		<!-- // .selection-block -->
+		<button class="send-button" type="submit">Отправить</button>
+	</form>
+	<div id="answer"></div>
+
+	<script src="assets/jquery.min.js"></script>
+	<script src="assets/jquery.maskedinput.min.js"></script>
+	<script src="assets/jquery.validate.min.js"></script>
+	<script src="assets/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,810 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Findall theme</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/et-line-font.css">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-select.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+	<!-- Кнопка "Вверх" -->
+	<div id="button-up">
+		<span class="eltdf-icon-stack">
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 18 18" enable-background="new 0 0 20 20" xml:space="preserve"><line fill="none" stroke="#ffffff" stroke-linecap="round" stroke-miterlimit="10" x1="7.572" y1="12.547" x2="11.172" y2="8.947"></line><line fill="none" stroke="#ffffff" stroke-linecap="round" stroke-miterlimit="10" x1="7.572" y1="5.289" x2="11.172" y2="8.889"></line></svg>
+		</span>
+	</div>
+
+	<!-- Header -->
+	<header class="row">
+		<div id="top-navbar-block" class="w-100 top-navbar-block navbar navbar-expand-lg flex-md-row bd-navbar">
+			<!-- Nav menu -->
+			<nav class="col-lg-10 col-md-11 col-sm-11 col-11 navbar navbar-expand-lg mr-auto top-menu--main-page">
+				<a class="navbar-brand navbar-logo" href="#">
+					<img class="logo-light"src="img/header/logo-light.png" width="67" height="19" alt="">
+					<img class="logo-dark" src="img/header/logo-standard.png" width="67" height="19" alt="">
+				</a>
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					<span class="navbar-toggler-icon navbar-toggler-dark-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="top-navbar-main-dropdown navbar-nav mr-auto d-flex">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Home
+								<img src="img/svg/arrow.svg" width="20" height="20" alt="arrow">
+							</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<a class="dropdown-item" href="#">Something else here</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Pages
+								<img src="img/svg/arrow.svg" width="20" height="20" alt="arrow">
+							</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<a class="dropdown-item" href="#">Something else here</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Listings
+								<img src="img/svg/arrow.svg" width="20" height="20" alt="arrow">
+							</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<a class="dropdown-item" href="#">Something else here</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Pricing</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Blog
+								<img src="img/svg/arrow.svg" width="20" height="20" alt="arrow">
+							</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<a class="dropdown-item" href="#">Something else here</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Shop
+								<img src="img/svg/arrow.svg" width="20" height="20" alt="arrow">
+							</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<a class="dropdown-item" href="#">Something else here</a>
+							</div>
+						</li>
+					</ul>
+				</div>				
+			</nav>	
+			<!-- // Nav menu -->
+
+			<!-- Cart + Sign In -->
+			<ul class="col-lg-2 col-md-1 col-sm-1 col-1 navbar-nav">
+				<li class="nav-item btn-block-item btn-block-cart ">
+					<a class="nav-link btn-block-link" href="#0">
+						<!-- Пустая корзина -->
+						<i class="icon-font-elegant">&#xe015;</i>
+						<!-- Полная корзина -->
+						<i class="icon-font-elegant none">&#xe07a;</i>
+						<i class="icon-bay-goods">0</i>
+						<span class="btn-block-text">Cart</span>
+					</a>
+				</li>
+				<li class="nav-item">
+				</li>
+				<li class="nav-item btn-block-sign">
+					<a class="nav-link btn-block-link" href="#0">
+						<i class="icon-font-elegant">&#xe08a;</i>
+						<span class="btn-block-text">Sign&nbsp;In</span>
+					</a>
+				</li>
+			</ul>
+			<!-- // Cart + Sign In -->
+		</div>
+	</header>
+	<!-- // Header -->
+
+	<!-- Carousel -->
+	<div id="carouselExampleIndicators" class="carousel slide top-carousel" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="img/top-slider/h3-rev-background-1.jpg">
+			</div>
+			<div class="carousel-item">
+				<img src="img/top-slider/h3-rev-background-2.jpg">
+			</div>
+			<div class="carousel-item">
+				<img src="img/top-slider/h3-rev-background-3.jpg">
+			</div>
+		</div>
+		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+
+		<div class="carousel-content">
+			<h1 class="carousel-title">
+				FindAll’s Advanced Search Filter. Take It for a Spin.<br>
+			</h1>
+			
+			<form class="carousel-form d-flex justify-content-between align-items-center">
+				<select class="selectpicker" data-live-search="true">
+					<option data-tokens="ketchup mustard">All Categories</option>
+					<option data-tokens="mustard">Cab Services</option>
+					<option data-tokens="frosting">Car Dealers</option>
+					<option data-tokens="frosting">Car Dealers</option>
+					<option data-tokens="frosting">Car Maintenance</option>
+					<option data-tokens="frosting">Beauty and Personal Care</option>
+					<option data-tokens="frosting">Beauty Salon</option>
+					<option data-tokens="frosting">Gym</option>
+				</select>
+				<select class="selectpicker" data-live-search="true">
+					<option data-tokens="ketchup mustard">All Locations</option>
+					<option data-tokens="mustard">Ciutat Vella</option>
+					<option data-tokens="frosting">Gràcia</option>
+					<option data-tokens="frosting">Horta-Guinardó</option>
+					<option data-tokens="frosting">Les Corts</option>
+					<option data-tokens="frosting">Nou Barris</option>
+					<option data-tokens="frosting">Sant Martí</option>
+				</select>
+
+				<button type="submit" class="carousel-btn btn-success">Submit</button>
+			</form>
+
+			<div class="popular-categories">
+				Popular:
+				<a type="button" href="#0" class="popular-btn btn-outline-light">Business</a>
+				<a type="button" href="#0" class="popular-btn btn-outline-light">Car Dealers</a>
+				<a type="button" href="#0" class="popular-btn btn-outline-light">Cleaning</a>
+				<a type="button" href="#0" class="popular-btn btn-outline-light">Gym</a>
+			</div>
+		</div>
+	</div>
+	<!-- // Carousel -->
+
+	<!-- Counter section -->
+	<div class="row bg-white">
+		<div class="container">
+			<div class="card-group">
+				<div class="card">
+					<div class="card-icon">
+						<i class="icon-font-elegant">&#xe027;</i>
+					</div>				
+					<div class="card-body">
+						<p class="card-title">3.203</p>
+						<span class="card-text">audio tutorials</span>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-icon">
+						<i class="icon-font-elegant">&#x6b;</i>
+					</div>				
+					<div class="card-body">
+						<p class="card-title">3.203</p>
+						<span class="card-text">audio tutorials</span>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-icon">
+						<i class="icon-font-elegant">&#xe01d;</i>
+					</div>				
+					<div class="card-body">
+						<p class="card-title">3.203</p>
+						<span class="card-text">audio tutorials</span>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-icon">
+						<i class="icon-font-elegant">&#xe035;</i>
+					</div>				
+					<div class="card-body">
+						<p class="card-title">3.203</p>
+						<span class="card-text">audio tutorials</span>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-icon">
+						<i class="icon-font-elegant">&#x3c;</i>
+					</div>				
+					<div class="card-body">
+						<p class="card-title">3.203</p>
+						<span class="card-text">audio tutorials</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // Counter section -->
+
+	<!-- Claim section -->
+	<div class="claim bg-l-green">
+		<div class="row">
+			<div class="container d-flex">
+				<div class="col-6 text-center claim-img-block">
+					<img class="w-100" src="img/claim/h3-img-1-background.png" alt="bg">
+					<img class="claim-overlay" src="img/claim/h3-img-1.png" alt="bg">
+				</div>
+				<div class="col-6 pl-5 claim-text-block">
+					<h2 class="claim-text-title">Claim your business</h2>
+					<p>
+						Id eum diam volutpat, paulo disputando ius id. Eu eirmod in solens mei. Ad meis expetenda maluisset sea.
+					</p>
+					<button class="icon-btn green-btn">
+						Get Listing&nbsp;
+						<svg version="1.1" class="eltdf-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.917px" height="18px" viewBox="0 0 17.917 18" enable-background="new 0 0 17.917 18" xml:space="preserve"><circle fill="none" stroke="#ffffff" stroke-miterlimit="10" cx="8.997" cy="9.012" r="7.875"></circle><line fill="none" stroke="#ffffff" stroke-linecap="round" stroke-miterlimit="10" x1="7.572" y1="12.547" x2="11.172" y2="8.947"></line><line fill="none" stroke="#ffffff" stroke-linecap="round" stroke-miterlimit="10" x1="7.572" y1="5.289" x2="11.172" y2="8.889"></line></svg>
+					</button>
+				</div> <!-- // claim-text-block -->
+			</div> <!-- // container -->
+		</div> <!-- //row -->
+
+		<div class="row">
+			<div class="container d-flex">
+				<div class="col-6 pl-5 claim-text-block">
+					<h2 class="claim-text-title">Business information</h2>
+					<p>
+						Id eum diam volutpat, paulo disputando ius id. Eu eirmod in solens mei. Ad meis expetenda maluisset sea.
+					</p>
+
+					<ul>
+						<li>Adresse: Carrer del Dr. Trueta, 50, Barcelona</li>
+						<li>Phone: +1234567890</li>
+					</ul>
+				</div> <!-- // claim-text-block -->
+
+				<div class="col-6 text-center position-relative">
+					<img class="w-100" src="img/claim/h3-img-2-background.png" alt="bg">
+					<img class="claim-overlay" src="img/claim/h3-img-2.png" alt="bg">
+				</div>
+
+			</div> <!-- // container -->
+		</div> <!-- //row -->
+
+		<div class="row">
+			<div class="container d-flex">
+				<div class="col-6 text-center position-relative">
+					<img class="w-100" src="img/claim/h3-img-2-background.png" alt="bg">
+					<img class="claim-overlay" src="img/claim/h3-img-3.png" alt="bg">
+				</div>
+
+				<div class="col-6 pl-5 claim-text-block">
+					<h2 class="claim-text-title">A pro directory app </h2>
+					<p>
+						Id eum diam volutpat, paulo disputando ius id. Eu eirmod in solens mei. Ad meis expetenda maluisset sea.
+					</p>
+					<img src="img/claim/h3-img-10.png" width="136" height="42" alt="AppStore">
+					<img src="img/claim/h3-img-11.png" width="136" height="42" alt="GooglePlay">
+				</div> <!-- // claim-text-block -->
+			</div> <!-- // container -->
+		</div> <!-- //row -->
+	</div>
+	<!-- Claim section -->
+
+	<!-- Popular service -->
+	<div class="row bg-white">
+		<div class="container">
+			<div class="w-100 popular text-center">
+				<p class="content-subtitle popular-title-text">
+					Once you’ve settled on a business
+				</p>
+				<h2 class="content-title popular-title">
+					Popular Professional Services
+				</h2>
+
+				<ul class="d-flex align-center justify-content-between w-100 popular-list text-left">
+					<li class="col-3 popular-item">
+						<img src="img/popular/1-1.jpg" alt="bg">
+						<div class="popular-text">
+							<h5>Travel and Transportation</h5>
+							<p>settled business</p>
+							<span class="popular-text-icon">
+								<i class="icon-font-elegant">&#xe08a;</i>
+								12
+							</span>
+						</div>
+					</li>
+					<li class="col-3 popular-item">
+						<img src="img/popular/2-2.jpg" alt="bg">
+						<div class="popular-text">
+							<h5>Travel and Transportation</h5>
+							<p>settled business</p>
+							<span class="popular-text-icon">
+								<i class="icon-font-elegant">&#xe08a;</i>
+								8
+							</span>
+						</div>
+					</li>
+					<li class="col-3 popular-item">
+						<img src="img/popular/3-3.jpg" alt="bg">
+						<div class="popular-text">
+							<h5>Travel and Transportation</h5>
+							<p>settled business</p>
+							<span class="popular-text-icon">
+								<i class="icon-font-elegant">&#xe08a;</i>
+								6
+							</span>
+						</div>
+					</li>
+					<li class="col-3 popular-item">
+						<img src="img/popular/4-4.jpg" alt="bg">
+						<div class="popular-text">
+							<h5>Travel and Transportation</h5>
+							<p>settled business</p>
+							<span class="popular-text-icon">
+								<i class="icon-font-elegant">&#xe08a;</i>
+								18
+							</span>
+						</div>
+					</li>
+				</ul>
+			</div> <!-- // popular -->
+		</div> <!-- // container -->
+	</div> <!-- // row -->
+	<!-- // Popular service -->
+
+	<!-- Get started section -->
+	<div class="row">
+		<div class="get-started">
+			<div class="container">
+				<div class="get-started-content">
+					<h2 class="get-started-title">
+						Get Started
+					</h2>
+					<p class="get-started-text">
+						Qui malorum reformidans ne. Sea omittantur persequeris ex, eum cibo prima tantas te, , facilis argumentum vim
+					</p>
+					<div class="get-started-btn-block">
+						<button class="icon-btn get-started-btn">
+							Existing user&nbsp;
+							<svg version="1.1" class="eltdf-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.917px" height="18px" viewBox="0 0 17.917 18" enable-background="new 0 0 17.917 18" xml:space="preserve"><circle fill="none" stroke="#ffffff" stroke-miterlimit="10" cx="8.997" cy="9.012" r="7.875"></circle><line fill="none" stroke="#ffffff" stroke-linecap="round" stroke-miterlimit="10" x1="7.572" y1="12.547" x2="11.172" y2="8.947"></line><line fill="none" stroke="#ffffff" stroke-linecap="round" stroke-miterlimit="10" x1="7.572" y1="5.289" x2="11.172" y2="8.889"></line></svg>
+							<span class="get-started-btn-text">
+								Update and enrich your business
+							</span>	
+						</button>
+						<button class="icon-btn get-started-btn">
+							New user&nbsp;
+							<svg version="1.1" class="eltdf-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.917px" height="18px" viewBox="0 0 17.917 18" enable-background="new 0 0 17.917 18" xml:space="preserve"><circle fill="none" stroke="#ffffff" stroke-miterlimit="10" cx="8.997" cy="9.012" r="7.875"></circle><line fill="none" stroke="#ffffff" stroke-linecap="round" stroke-miterlimit="10" x1="7.572" y1="12.547" x2="11.172" y2="8.947"></line><line fill="none" stroke="#ffffff" stroke-linecap="round" stroke-miterlimit="10" x1="7.572" y1="5.289" x2="11.172" y2="8.889"></line></svg>
+							<span class="get-started-btn-text">
+								Update and enrich your business
+							</span>							
+						</button>
+					</div>
+				</div> <!-- // get-started-content -->
+			</div> <!-- // container -->
+		</div> <!-- // get-started -->
+	</div> <!-- // row -->
+	<!-- // Get started section -->
+
+	<!-- Testimonials section -->
+	<div class="row bg-l-green">
+		<div class="testimonials">			
+			<div class="container d-flex justify-content-between">
+				<!-- left column -->
+				<div class="col-6">
+					<div class="testimonials-show">
+						<p class="content-subtitle">
+							A few words from our customers
+						</p>
+						<h2 class="content-title">				
+							What our users have to say 
+						</h2>
+						<p class="content-text">
+							Id eum diam volutpat, paulo disputando ius id. Eu eirmod in solensi mei. Ad meis expetenda maluisset sea.
+						</p>
+						<button class="icon-btn green-btn">
+							See more&nbsp;
+							<svg version="1.1" class="eltdf-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.917px" height="18px" viewBox="0 0 17.917 18" enable-background="new 0 0 17.917 18" xml:space="preserve"><circle fill="none" stroke="#ffffff" stroke-miterlimit="10" cx="8.997" cy="9.012" r="7.875"></circle><line fill="none" stroke="#ffffff" stroke-linecap="round" stroke-miterlimit="10" x1="7.572" y1="12.547" x2="11.172" y2="8.947"></line><line fill="none" stroke="#ffffff" stroke-linecap="round" stroke-miterlimit="10" x1="7.572" y1="5.289" x2="11.172" y2="8.889"></line></svg>
+						</button>
+						<div class="claim-img-block">
+							<img class="w-100" src="img/testimonials/h3-img-9.png" alt="bg">
+						</div>
+					</div>
+				</div>
+				<!-- right column -->
+				<div class="col-6">
+					<div class="testimonials-reviews">
+						<!-- testimonials-item -->
+						<div class="testimonials-item">
+							<div class="testimonials-item-block">
+								<h5 class="testimonials-item-title">
+									Megan Bowers
+								</h5>
+								<p class="testimonials-item-text">
+									Lorem ipsum dolor sit amet, consectetur sed do eiusmod tempor incididunt settled
+								</p>
+								<div class="testimonials-item-breadcrambs">
+									<span class="testimonials-item-profession">Manager</span>
+									,
+									<span class="testimonials-item-city">New York</span>
+								</div>
+							</div>
+							<img src="img/testimonials/h3-testimonials-3.jpg" alt="Megan Bowers" class="testimonials-item-img">
+						</div> <!-- // testimonials-item -->
+
+						<!-- testimonials-item -->
+						<div class="testimonials-item">
+							<img src="img/testimonials/h3-testimonials-2.jpg" alt="Megan Bowers" class="testimonials-item-img testimonials-item-img--green">
+							<div class="testimonials-item-block testimonials-item-block-green">
+								<h5 class="testimonials-item-title text-white">
+									Mona Pope
+								</h5>
+								<p class="testimonials-item-text">
+									Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra.
+								</p>
+								<div class="testimonials-item-breadcrambs text-white">
+									<span class="testimonials-item-profession">Graphic Designer</span>
+									,
+									<span class="testimonials-item-city">London</span>
+								</div>
+							</div>							
+						</div> <!-- // testimonials-item -->
+
+						<!-- testimonials-item -->
+						<div class="testimonials-item">
+							<div class="testimonials-item-block">
+								<h5 class="testimonials-item-title">
+									Sam Ellis
+								</h5>
+								<p class="testimonials-item-text">
+									Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus.
+								</p>
+								<div class="testimonials-item-breadcrambs">
+									<span class="testimonials-item-profession">Web Designer</span>
+									,
+									<span class="testimonials-item-city">Canada</span>
+								</div>
+							</div>
+							<img src="img/testimonials/h3-testimonials-1.jpg" alt="Megan Bowers" class="testimonials-item-img">
+						</div> <!-- // testimonials-item -->
+
+					</div> <!-- // testimonials-reviews -->
+				</div> <!-- // col-6 -->
+			</div> <!-- // container -->
+		</div> <!-- // testimonials -->
+	</div> <!-- // row -->
+	<!-- // Testimonials section -->
+
+	<!-- Slogan section -->
+	<div class="row">
+		<div class="slogan">
+			<div class="container">
+				<div class="slogan-content">
+					<p class="content-subtitle slogan-text">
+						Once you’ve settled on a business
+					</p>
+					<h2 class="content-title slogan-title">
+						Be inspired to achieve more, get on top of every business challenge today 
+					</h2>
+					
+					<button class="icon-btn slogan-btn">
+						Explore More&nbsp;
+						<svg version="1.1" class="eltdf-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.917px" height="18px" viewBox="0 0 17.917 18" enable-background="new 0 0 17.917 18" xml:space="preserve"><circle fill="none" stroke="#ffffff" stroke-miterlimit="10" cx="8.997" cy="9.012" r="7.875"></circle><line fill="none" stroke="#ffffff" stroke-linecap="round" stroke-miterlimit="10" x1="7.572" y1="12.547" x2="11.172" y2="8.947"></line><line fill="none" stroke="#ffffff" stroke-linecap="round" stroke-miterlimit="10" x1="7.572" y1="5.289" x2="11.172" y2="8.889"></line></svg>
+					</button>					
+				</div> <!-- // slogan-content -->
+			</div> <!-- // container -->
+		</div> <!-- // slogan -->
+	</div> <!-- // row -->
+	<!-- // Slogan section -->
+
+	<!-- Blog service -->
+	<div class="row bg-l-green">
+		<div class="container">
+			<div class="w-100 blog text-center">
+				<p class="content-subtitle blog-title-text">
+					Once you’ve settled on a business
+				</p>
+				<h2 class="content-title blog-title">
+					Popular Professional Services
+				</h2>
+
+				<ul class="d-flex align-center justify-content-between flex-wrap w-100 blog-list text-left">
+
+					<li class="col-4 blog-item position-relative">
+						<p class="blog-text-icon">
+							<span>23</span>
+							Jul
+						</p>
+						<img src="img/blog/h3-blog-img-list-1.jpg" alt="bg">
+						<div class="blog-text">
+							<div class="blog-breadcrambs">
+								<span class="blog-breadcrambs-path">Home</span>
+								/
+								<span class="blog-breadcrambs/current">Service</span>
+							</div>
+							<h5 class="blog-text-title">24 Best Gardening Services</h5>
+							<p class="blog-text-desc">Lorem ipsum dolor sit amet, summo doctus volumus eum cu, ius quis stet scripta ne...</p>
+							<button class="icon-btn blog-btn">
+								Read More&nbsp;
+								<svg version="1.1" class="eltdf-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.917px" height="18px" viewBox="0 0 17.917 18" enable-background="new 0 0 17.917 18" xml:space="preserve"><circle fill="none" stroke="#43824f" stroke-miterlimit="10" cx="8.997" cy="9.012" r="7.875"></circle><line fill="none" stroke="#43824f" stroke-linecap="round" stroke-miterlimit="10" x1="7.572" y1="12.547" x2="11.172" y2="8.947"></line><line fill="none" stroke="#43824f" stroke-linecap="round" stroke-miterlimit="10" x1="7.572" y1="5.289" x2="11.172" y2="8.889"></line></svg>
+							</button>						
+						</div>
+					</li>
+
+					<li class="col-4 blog-item position-relative">
+						<p class="blog-text-icon">
+							<span>24</span>
+							Jul
+						</p>
+						<img src="img/blog/h3-blog-img-list-2.jpg" alt="bg">
+						<div class="blog-text">
+							<div class="blog-breadcrambs">
+								<span class="blog-breadcrambs-path">Home</span>
+								/
+								<span class="blog-breadcrambs/current">Service</span>
+							</div>
+							<h5 class="blog-text-title">Family Medicine Services</h5>
+							<p class="blog-text-desc">Lorem ipsum dolor sit amet, summo doctus volumus eum cu, ius quis stet scripta ne...</p>
+							<button class="icon-btn blog-btn">
+								Read More&nbsp;
+								<svg version="1.1" class="eltdf-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.917px" height="18px" viewBox="0 0 17.917 18" enable-background="new 0 0 17.917 18" xml:space="preserve"><circle fill="none" stroke="#43824f" stroke-miterlimit="10" cx="8.997" cy="9.012" r="7.875"></circle><line fill="none" stroke="#43824f" stroke-linecap="round" stroke-miterlimit="10" x1="7.572" y1="12.547" x2="11.172" y2="8.947"></line><line fill="none" stroke="#43824f" stroke-linecap="round" stroke-miterlimit="10" x1="7.572" y1="5.289" x2="11.172" y2="8.889"></line></svg>
+							</button>						
+						</div>
+					</li>
+
+					<li class="col-4 blog-item position-relative">
+						<p class="blog-text-icon">
+							<span>25</span>
+							Jul
+						</p>
+						<img src="img/blog/h3-blog-img-list-3.jpg" alt="bg">
+						<div class="blog-text">
+							<div class="blog-breadcrambs">
+								<span class="blog-breadcrambs-path">Home</span>
+								/
+								<span class="blog-breadcrambs/current">Service</span>
+							</div>
+							<h5 class="blog-text-title">What Does a Travel Agent Do</h5>
+							<p class="blog-text-desc">Lorem ipsum dolor sit amet, summo doctus volumus eum cu, ius quis stet scripta ne...</p>
+							<button class="icon-btn blog-btn">
+								Read More&nbsp;
+								<svg version="1.1" class="eltdf-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.917px" height="18px" viewBox="0 0 17.917 18" enable-background="new 0 0 17.917 18" xml:space="preserve"><circle fill="none" stroke="#43824f" stroke-miterlimit="10" cx="8.997" cy="9.012" r="7.875"></circle><line fill="none" stroke="#43824f" stroke-linecap="round" stroke-miterlimit="10" x1="7.572" y1="12.547" x2="11.172" y2="8.947"></line><line fill="none" stroke="#43824f" stroke-linecap="round" stroke-miterlimit="10" x1="7.572" y1="5.289" x2="11.172" y2="8.889"></line></svg>
+							</button>						
+						</div>
+					</li>
+				</ul>
+			</div> <!-- // blog -->
+		</div> <!-- // container -->
+	</div> <!-- // row -->
+	<!-- // Blog service -->
+
+	<!-- FindAll service -->
+	<div class="row bg-d-green">
+		<div class="container">
+			<div class="findall d-flex">
+				<!-- left-column -->
+				<div class="col-3">
+					<h4 class="findall-title">This is FindAll</h4>
+					<p class="findall-text">
+						Welcome to FindAll, a modern business directory and listing theme that’s just perfect for your new website.
+					</p>
+					<button class="icon-btn blog-btn">
+						All New Businesses&nbsp;
+						<svg version="1.1" class="eltdf-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.917px" height="18px" viewBox="0 0 17.917 18" enable-background="new 0 0 17.917 18" xml:space="preserve"><circle fill="none" stroke="#43824f" stroke-miterlimit="10" cx="8.997" cy="9.012" r="7.875"></circle><line fill="none" stroke="#43824f" stroke-linecap="round" stroke-miterlimit="10" x1="7.572" y1="12.547" x2="11.172" y2="8.947"></line><line fill="none" stroke="#43824f" stroke-linecap="round" stroke-miterlimit="10" x1="7.572" y1="5.289" x2="11.172" y2="8.889"></line></svg>
+					</button>
+				</div>
+				<!-- middle column -->
+				<div class="col-6">
+					<h4 class="findall-title">Featured Cities</h4>
+					<div class="findall-city-block">
+						<ul class="city-block-list findall-text">
+							<li class="city-block-item">
+								<a href="#0" class="city-block-link">Granollers, ES</a>
+							</li>
+							<li class="city-block-item">
+								<a href="#0" class="city-block-link">Newcastle, UK</a>
+							</li>
+							<li class="city-block-item">
+								<a href="#0" class="city-block-link">Saint-Étienne, FR</a>
+							</li>
+							<li class="city-block-item">
+								<a href="#0" class="city-block-link">Stockholm, SE</a>
+							</li>
+							<li class="city-block-item">
+								<a href="#0" class="city-block-link">Frankfurt, DE</a>
+							</li>
+							<li class="city-block-item">
+								<a href="#0" class="city-block-link">Rimini, IT</a>
+							</li>
+						</ul>
+
+						<ul class="city-block-list findall-text">
+							<li class="city-block-item">
+								<a href="#0" class="city-block-link">Granollers, ES</a>
+							</li>
+							<li class="city-block-item">
+								<a href="#0" class="city-block-link">Newcastle, UK</a>
+							</li>
+							<li class="city-block-item">
+								<a href="#0" class="city-block-link">Saint-Étienne, FR</a>
+							</li>
+							<li class="city-block-item">
+								<a href="#0" class="city-block-link">Stockholm, SE</a>
+							</li>
+							<li class="city-block-item">
+								<a href="#0" class="city-block-link">Frankfurt, DE</a>
+							</li>
+							<li class="city-block-item">
+								<a href="#0" class="city-block-link">Rimini, IT</a>
+							</li>
+						</ul>
+
+						<ul class="city-block-list findall-text">
+							<li class="city-block-item">
+								<a href="#0" class="city-block-link">Granollers, ES</a>
+							</li>
+							<li class="city-block-item">
+								<a href="#0" class="city-block-link">Newcastle, UK</a>
+							</li>
+							<li class="city-block-item">
+								<a href="#0" class="city-block-link">Saint-Étienne, FR</a>
+							</li>
+							<li class="city-block-item">
+								<a href="#0" class="city-block-link">Stockholm, SE</a>
+							</li>
+							<li class="city-block-item">
+								<a href="#0" class="city-block-link">Frankfurt, DE</a>
+							</li>
+							<li class="city-block-item">
+								<a href="#0" class="city-block-link">Rimini, IT</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- right column -->
+				<div class="col-3 pl-5">
+					<h4 class="findall-title">Featured States</h4>
+					<div class="findall-city-block">
+						<ul class="city-block-list findall-text">
+							<li class="city-block-item">
+								<a href="#0" class="city-block-link">Spain</a>
+							</li>
+							<li class="city-block-item">
+								<a href="#0" class="city-block-link">France</a>
+							</li>
+							<li class="city-block-item">
+								<a href="#0" class="city-block-link">United States</a>
+							</li>
+							<li class="city-block-item">
+								<a href="#0" class="city-block-link">England</a>
+							</li>
+							<li class="city-block-item">
+								<a href="#0" class="city-block-link">Italy</a>
+							</li>
+							<li class="city-block-item">
+								<a href="#0" class="city-block-link">Sweden</a>
+							</li>
+						</ul>
+
+						<ul class="city-block-list findall-text">
+							<li class="city-block-item">
+								<a href="#0" class="city-block-link">Scotland</a>
+							</li>
+							<li class="city-block-item">
+								<a href="#0" class="city-block-link">Germany</a>
+							</li>
+							<li class="city-block-item">
+								<a href="#0" class="city-block-link">Nederland</a>
+							</li>
+							<li class="city-block-item"></li>
+							<li class="city-block-item mt-3">
+								<a class="icon-btn blog-btn">
+									All States&nbsp;
+									<svg version="1.1" class="eltdf-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.917px" height="18px" viewBox="0 0 17.917 18" enable-background="new 0 0 17.917 18" xml:space="preserve"><circle fill="none" stroke="#43824f" stroke-miterlimit="10" cx="8.997" cy="9.012" r="7.875"></circle><line fill="none" stroke="#43824f" stroke-linecap="round" stroke-miterlimit="10" x1="7.572" y1="12.547" x2="11.172" y2="8.947"></line><line fill="none" stroke="#43824f" stroke-linecap="round" stroke-miterlimit="10" x1="7.572" y1="5.289" x2="11.172" y2="8.889"></line></svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div> <!-- // findall -->
+		</div> <!-- // container -->
+	</div> <!-- // row -->
+	<!-- // FindAll service -->
+
+	<!-- Footer -->
+	<footer class="footer bg-green">
+		<div class="row">
+			<div class="container">
+				<div class="w-100 d-flex justify-content-between footer-list">
+
+					<div class="col-3">
+						<p>
+							Welcome to a modern business directory and listing theme that’s just perfect for your new website.
+						</p>
+						<div class="d-flex justify-content-between flex-nowrap">
+							<img src="img/footer/footer-img-2.png" width="122" height="37" alt="AppStore">
+							<img src="img/footer/footer-img-3.png" width="122" height="37" alt="GooglePlay">
+						</div>						
+					</div> <!-- // col-3 -->
+
+					<div class="col-3">
+						<h4 class="findall-title text-white">Popular Categories</h4>
+					</div>
+
+					<div class="col-3">
+						<h4 class="findall-title text-white">Newsletter</h4>
+						<p>
+							Carrer del Dr. Trueta, 50, Barcelona findall@qodethemes.com
+						</p>
+						<div class="input-group align-center">  
+							<input type="text" class="form-control footer-email" placeholder="Your email" />
+							<span class="fly-icon pt-2 position-absolute">
+								<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path fill="#ffffff" stroke="null" d="m19.634213.32997c-.169646-.20368-.437322-.25829-.659057-.1544L.517004 8.84013c-.204498.09609-.338916.31086-.343888.55068-.004972.2394.12024.46033.32091.56627l4.407366 2.32424 1.098293 7.06552c.03562.26815.232071.48374.487889.52275.18381.02834.366474-.04106.492846-.18068l3.479473-3.7311 4.96532 3.80337c.15931.12155.364576.14824.545327.07145.181128-.07678.313632-.2472.351934-.45211l3.446535-18.52c.034083-.18356-.00996-.38025-.134795-.53055zm-14.277885 10.81839-3.245488-1.71156L14.932742 3.418l-9.576415 7.73036zm1.797566 1.83105-.534207 2.86424-.576336-3.70811 7.045117-5.68699-5.777946 6.21672c-.081184.08706-.135187.2004-.156628.31414zm.349644 4.4062.60275-3.23053 1.405808 1.07671-2.008557 2.15382zm7.866151.81883-6.767858-5.18355 9.668312-10.40199-2.900454 15.58554z" id="svg_1"/></svg>
+							</span>
+							
+						</div>
+					</div>
+
+					<div class="col-3 pl-5">
+						<h4 class="findall-title text-white">Links</h4>
+						<ul class="footer-links-list">
+							<li class="footer-links-item">
+								<a href="#0" class="footer-links-link">How It Works</a>
+							</li>
+							<li class="footer-links-item">
+								<a href="#0" class="footer-links-link">Get to know us</a>
+							</li>
+							<li class="footer-links-item">
+								<a href="#0" class="footer-links-link">Pricing Packages</a>
+							</li>
+							<li class="footer-links-item">
+								<a href="#0" class="footer-links-link">User Dashboard</a>
+							</li>
+							<li class="footer-links-item">
+								<a href="#0" class="footer-links-link">Contact Us</a>
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="container">
+				<div class="footer-copyright">
+					Copyright &copy; Made from Qode Themes
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- // Footer --> 
+
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-select.min.js"></script>
+
+	<script src="js/custom.js"></script>
+</body>
+</html>

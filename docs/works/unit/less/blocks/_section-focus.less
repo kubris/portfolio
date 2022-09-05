@@ -1,0 +1,129 @@
+.section-focus {
+	position: relative;
+	padding-top: 74px;
+	padding-bottom: 30px;
+	overflow: hidden;
+	
+	&::before {
+		content: "";
+		position: absolute;
+		left: 50%;
+		top: 0;
+		transform: translate(-50%, -50%)
+		rotate(45deg);
+
+		width: 68px;
+		height: 68px;
+		background-color: #a4eecb;
+	}
+
+	@media (min-width: 768px) {
+		margin-bottom: -14px;
+		padding-top: 59px;
+		padding-bottom: 0;
+
+		&::before {
+			display: none;
+		}
+	}
+	
+	@media (min-width: 1200px) {
+		margin-bottom: 0;
+		padding-top: 80px;
+		overflow-x: hidden;
+
+		&::before {
+			display: block;
+			content: "";
+			position: absolute;
+			right: 0;
+			left: unset;
+			top: 50%;
+	
+			width: 132px;
+			height: 132px;
+			background-color: #a4eecb;
+			transform: 	translate(50%, -50%) 
+						rotate(45deg);
+		}
+	}
+}
+
+.section-focus__row {
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: space-between;
+	align-items: center;
+
+	@media (min-width: 768px) {
+		padding-right: 22px;
+		flex-direction: row;
+		align-items: flex-start;
+	}
+
+	@media (min-width: 1200px) {
+		padding-right: 0;
+		align-items: center;
+	}
+}
+
+.section-focus__img-wrapper {
+	position: relative;
+	max-width: 470px;
+	
+	@media (min-width: 768px) {
+		max-width: unset;
+		width: 302px;
+		height: 518px;
+	}
+	
+	@media (min-width: 1200px) {
+		width: 470px;
+		height: 731px;
+	}
+}
+
+.section-focus__img {
+
+	@media (min-width: 768px) {
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 100%;
+		max-width: unset;
+		transition: right 0.4s linear;
+		transform: translateX(-4%);
+
+		&:hover {
+			right: 30px;
+			transform: translateX(0%);
+		}
+	}
+
+	@media (min-width: 768px) {
+		right: -10px;
+	}
+
+	@media (min-width: 1200px) {
+		height: auto;
+		transform: translateX(0%);
+	}
+}
+
+.section-focus__content {
+	padding-bottom: 50px;
+	max-width: 470px;
+	text-align: center;
+
+	@media (min-width: 768px) {
+		padding-top: 26px;
+		text-align: left;
+		max-width: 384px;
+	}
+	
+	@media (min-width: 1200px) {
+		padding-top: 0;
+		padding-bottom: 122px;
+		max-width: 470px;
+	}
+}
