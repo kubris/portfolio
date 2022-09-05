@@ -12,12 +12,6 @@
 
 ## Контакты
 
-Если вы ищите специалиста по вёрстке сайтов, front-end разработчика в команду или для работы над проектом — напишите мне.
-
-- демо: https://kubris.site/
+- telegram: @kubris_pro
 
 - email: kubris.pro@gmail.com
-
-- skype: kubris.pro
-
-![Портфолио](https://raw.githubusercontent.com/kubris/portfolio/main/docs/img/header/header-bg.png)
